@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap');
+
+@import "tailwindcss";
+@tailwind utilities;
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: false;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(98% 0.003 247.858);
+  --color-base-200: oklch(98% 0 0);
+  --color-base-300: oklch(95% 0 0);
+  --color-base-content: oklch(21% 0.006 285.885);
+  --color-primary: oklch(12% 0.042 264.695);
+  --color-primary-content: oklch(93% 0.034 272.788);
+  --color-secondary: oklch(45.5% 0.188 13.697);
+  --color-secondary-content: oklch(94% 0.028 342.258);
+  --color-accent: oklch(78% 0.154 211.53);
+  --color-accent-content: oklch(38% 0.063 188.416);
+  --color-neutral: oklch(98% 0.003 247.858);
+  --color-neutral-content: oklch(92% 0.004 286.32);
+  --color-info: oklch(95% 0.045 203.388);
+  --color-info-content: oklch(29% 0.066 243.157);
+  --color-success: oklch(76% 0.177 163.223);
+  --color-success-content: oklch(37% 0.077 168.94);
+  --color-warning: oklch(82% 0.189 84.429);
+  --color-warning-content: oklch(41% 0.112 45.904);
+  --color-error: oklch(71% 0.194 13.428);
+  --color-error-content: oklch(27% 0.105 12.094);
+  --radius-selector: 1rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.21875rem;
+  --size-field: 0.21875rem;
+  --border: 0.5px;
+  --depth: 1;
+  --noise: 0;
+}
+
+
+.banner {
+  font-family: "TASA Orbiter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.text-TASA {
+  font-family: "TASA Orbiter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity .20s ease, transform .20s ease;
+  z-index: 40;
+}
+
+/* Show */
+.mega-menu.open {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+/* Interior menu list */
+.mega-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+/* List items behave like Apple’s: compact, minimal, clean */
+.mega-menu li a {
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+/* Hover styling from your navbar */
+.mega-menu li a:hover {
+  color: #831843;  /* pink-950 */
+  background-color: rgba(131, 24, 67, 0.10); /* very soft rose tint */
+}

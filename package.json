@@ -1,0 +1,23 @@
+{
+  "name": "homecoming-website-project",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "\"npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css\""
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  },
+  "devDependencies": {
+    "daisyui": "^5.5.5"
+  }
+}
