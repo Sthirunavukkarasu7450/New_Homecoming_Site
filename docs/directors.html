@@ -7,7 +7,7 @@
   <title>Directors</title>
 </head>
 <body class="m-0 overflow-x-hidden overflow-y-scroll">
-  <div class="navbar bg-base-100 banner text-secondary border-2 border-secondary-content fixed z-50 top-0 left-0 w-full">
+  <div class="navbar bg-base-100 banner text-secondary border-b-4 border-secondary-content sticky z-50 top-0 left-0 w-full">
     <div class="navbar-start banner">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -38,14 +38,13 @@
     </div>
     <div class="navbar-center hidden lg:flex banner">
       <ul class="menu menu-horizontal flex justify-center text-center items-center origin-center px-2 text-xl mx-3">
-        <li><a tabindex="0" href="./index.html" class="text-secondary transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent">Home</a></li>
-        <li class="relative mega-trigger p-0 m-0">
-          <button class="btn text-secondary bg-base-100 border-none shadow-none text-xl flex items-center gap-1 transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent">
-            <a href="./about.html">About</a>
-            <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M9.47 15.28..." />
+        <li class="flex-none"><a tabindex="0" href="./index.html" class="text-secondary transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent">Home</a></li>
+        <li class="relative mega-trigger flex-none">
+          <a class="text-secondary bg-base-100 border-none shadow-none text-xl flex items-center gap-1 transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent" href="./about.html">About
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
             </svg>
-          </button>
+          </a>
           <div class="mega-menu bg-base-100 w-auto">
             <ul class="menu text-xl">
               <li><a href="./sustainability.html">Sustainability</a></li>
@@ -53,9 +52,9 @@
             </ul>
           </div>
         </li>
-        <li><a tabindex="0" href="./events.html" class="transition hover:text-pink-950 ease-in-out duration-900 pr-2 mx-2 hover:bg-transparent">Events</a></li>
-        <li><a tabindex="0" href="./alumni.html" class="transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent">Alumni</a></li>
-        <li class="dropdown dropdown-hover p-0 m-0 dropdown-bottom relative">
+        <li class="flex-none"><a tabindex="0" href="./events.html" class="transition hover:text-pink-950 ease-in-out duration-900 pr-2 mx-2 hover:bg-transparent">Events</a></li>
+        <li class="flex-none"><a tabindex="0" href="./alumni.html" class="transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent">Alumni</a></li>
+        <li class="dropdown dropdown-hover p-0 m-0 dropdown-bottom relative flex-none">
           <a tabindex="0" href="./court.html" class="btn text-secondary bg-base-100 transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 border-none shadow-none text-xl">
               Court
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
@@ -69,7 +68,7 @@
             <li><a href="./university_court.html" class="transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2">University</a></li>
           </ul>
         </li>
-        <li class="dropdown dropdown-hover p-0 m-0 dropdown-bottom relative">
+        <li class="dropdown dropdown-hover p-0 m-0 dropdown-bottom relative flex-none">
           <a tabindex="0" class="btn text-secondary bg-base-100 transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 border-none shadow-none text-xl">
               Participate
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
@@ -83,7 +82,7 @@
             <li><a href="./resources.html" class="transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2">Resources</a></li>
           </ul>
         </li>
-        <li><a href="https://photos.homecoming.psu.edu" class="transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 bg-transparent">Photos</a></li>
+        <li class="flex-none"><a href="https://photos.homecoming.psu.edu" class="transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 bg-transparent">Photos</a></li>
       </ul>
     </div>
     <div class="navbar-end p-3 text-xl">
@@ -128,7 +127,7 @@
 
     <div class="hero w-screen min-h-dvh bg-cover bg-center md:bg-fixed bg-no-repeat relative" style="background-image: url('../files/img/directors_old_main_pic.jpg');">
         <div class="hero-overlay absolute inset-0 bg-black opacity-40"></div>
-        <div class="absolute top-10 mt-60 left-1/2 transform -translate-x-1/2 text-center text-white">
+        <div class="absolute top-48 mt-20 left-1/2 transform -translate-x-1/2 text-center text-white">
             <h1 class="text-6xl md:text-9xl font-bold font-TASA drop-shadow-lg">Directors</h1>
         </div>
     </div>
@@ -166,8 +165,8 @@
         <div class="lg:col-span-1"></div>
         <div class="col-span-1 lg:col-span-2">
           <img src="../files/img/logistics_officer.jpg" alt="" class="rounded-3xl h-96 mx-auto">
-          <div class="text-center text-4xl font-bold text-secondary px-6 py-2">Riley Neilon</div>
-          <div class="text-center text-xl text-TASA text-primary px-6 py-2">Logistics</div>
+          <div class="text-center text-xl lg:text-2xl font-bold text-secondary px-6 py-2">Riley Neilon</div>
+          <div class="text-center text-lg text-TASA text-primary px-6 py-2">Logistics</div>
           <div class="items-center">
             <div class="text-center justify-content-center px-6 py-3 mx-8">
               <a href="mailto:logistics@homecoming.psu.edu" class="btn btn-secondary text-xl px-4 py-6">Email
@@ -188,8 +187,8 @@
         </div>
         <div class="col-span-1 lg:col-span-2">
           <img src="../files/img/outreach_officer.jpg" alt="" class="rounded-3xl h-96 mx-auto">
-          <div class="text-center text-4xl font-bold text-secondary px-6 py-2">Dan O'Connell</div>
-          <div class="text-center text-xl text-TASA text-primary px-6 py-2">Outreach</div>
+          <div class="text-center text-xl lg:text-2xl font-bold text-secondary px-6 py-2">Dan O'Connell</div>
+          <div class="text-center text-lg text-TASA text-primary px-6 py-2">Outreach</div>
           <div class="items-center">
             <div class="text-center justify-content-center px-6 py-3 mx-8">
               <a href="mailto:outreach@homecoming.psu.edu" class="btn btn-secondary text-xl px-4 py-6">Email
