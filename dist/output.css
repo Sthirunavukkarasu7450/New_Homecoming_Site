@@ -929,9 +929,6 @@
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
-  .col-span-6 {
-    grid-column: span 6 / span 6;
-  }
   .hero {
     @layer daisyui.l1.l2.l3 {
       display: grid;
@@ -1005,8 +1002,8 @@
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
-  .mt-40 {
-    margin-top: calc(var(--spacing) * 40);
+  .mt-60 {
+    margin-top: calc(var(--spacing) * 60);
   }
   .fieldset-legend {
     @layer daisyui.l1.l2.l3 {
@@ -1120,9 +1117,6 @@
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
   .items-center {
     align-items: center;
@@ -1423,6 +1417,21 @@
       line-height: var(--tw-leading, var(--text-9xl--line-height));
     }
   }
+  .lg\:col-span-1 {
+    @media (width >= 64rem) {
+      grid-column: span 1 / span 1;
+    }
+  }
+  .lg\:col-span-2 {
+    @media (width >= 64rem) {
+      grid-column: span 2 / span 2;
+    }
+  }
+  .lg\:col-span-6 {
+    @media (width >= 64rem) {
+      grid-column: span 6 / span 6;
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
@@ -1436,6 +1445,11 @@
   .lg\:grid-cols-4 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-6 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
     }
   }
   .lg\:px-4 {
