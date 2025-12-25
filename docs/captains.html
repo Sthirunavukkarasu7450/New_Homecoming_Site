@@ -1,0 +1,1439 @@
+<!doctype html>
+<html data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <title>Captains</title>
+  <link rel="shortcut icon" href="../files/img/banner-logo.png" type="image/x-icon">
+</head>
+<body class="overflow-x-hidden">
+    <div class="navbar bg-base-100 banner text-secondary border-b-4 border-secondary-content sticky z-50 top-0 left-0 w-full">
+    <div class="navbar-start banner lg:hidden">
+        <div class="dropdown">
+            <button tabindex="0" class="btn btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6">
+                <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            </button>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 w-56 bg-base-100 rounded-box shadow z-50 text-lg">
+                <li><a href="./index.html">Home</a></li>
+                <li>
+                    <details>
+                    <summary class="flex justify-between items-center">
+                        <a href="./about.html" class="flex-1">About</a>
+                    </summary>
+                    <ul class="p-2">
+                        <li><a href="./sustainability.html">Sustainability</a></li>
+                        <li><a href="./directors.html">Directors</a></li>
+                    </ul>
+                    </details>
+                </li>
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="./alumni.html">Alumni</a></li>
+                <li>
+                    <details>
+                    <summary class="flex justify-between items-center">
+                        <a href="./court.html" class="flex-1">Court</a>
+                    </summary>
+                    <ul class="p-2">
+                        <li><a href="./student_court.html">Student</a></li>
+                        <li><a href="./graduate_court.html">Graduate</a></li>
+                        <li><a href="./alumni_court.html">Alumni</a></li>
+                        <li><a href="./university_court.html">University</a></li>
+                    </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                    <summary class="flex justify-between items-center">
+                        <a href="./participate.html" class="flex-1">Participate</a>
+                    </summary>
+                    <ul class="p-2">
+                        <li>
+                            <details>
+                                <summary class="flex justify-between items-center">
+                                <a href="./volunteers.html" class="flex-1">
+                                    Volunteers
+                                </a>
+                                </summary>
+                                <ul class="p-2">
+                                <li><a href="./captains.html">Captains</a></li>
+                                <li><a href="./committee_members.html">Committee Members</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a href="./organizations.html">Organizations</a></li>
+                        <li><a href="./forms.html">Forms & Applications</a></li>
+                        <li><a href="./resources.html">Resources</a></li>
+                    </ul>
+                    </details>
+                </li>
+                <li>
+                    <a href="https://photos.homecoming.psu.edu">Photos</a>
+                </li>
+                <li class="mt-2">
+                    <button
+                    class="btn btn-secondary w-full text-base-100"
+                    onclick="subscribe_modal.showModal()">
+                    Subscribe
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="hidden lg:flex navbar-start banner">
+        <a href="./index.html">
+        <img src="../files/img/banner-logo.png" alt="" class="w-24 image-full p-1 m-1 md:items-center">
+        </a>
+    </div>
+    <div class="navbar-center lg:hidden flex">
+      <a href="./index.html">
+        <img src="../files/img/banner-logo.png" alt="" class="w-24 image-full p-1 m-1 md:items-center">
+      </a>
+    </div>
+    <div class="navbar-center hidden lg:flex banner">
+      <ul class="menu menu-horizontal flex justify-center text-center items-center origin-center px-2 text-xl mx-3">
+        <li class="flex-none"><a tabindex="0" href="./index.html" class="text-secondary transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent">Home</a></li>
+        <li class="relative mega-trigger flex-none">
+          <a class="text-secondary bg-base-100 border-none shadow-none text-xl flex items-center gap-1 transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent" href="./about.html">About
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+          </a>
+          <div class="mega-menu bg-base-100 w-auto">
+            <ul class="menu text-lg">
+              <li><a href="./sustainability.html">Sustainability</a></li>
+              <li><a href="./directors.html">Directors</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="flex-none"><a tabindex="0" href="./events.html" class="transition hover:text-pink-950 ease-in-out duration-900 pr-2 mx-2 hover:bg-transparent">Events</a></li>
+        <li class="flex-none"><a tabindex="0" href="./alumni.html" class="transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent">Alumni</a></li>
+        <li class="relative mega-trigger flex-none">
+          <a class="text-secondary bg-base-100 border-none shadow-none text-xl flex items-center gap-1 transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent" href="./court.html">Court
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+          </a>
+          <div class="mega-menu bg-base-100 w-auto">
+            <ul class="menu text-lg">
+              <li><a href="./student_cout.html">Student</a></li>
+              <li><a href="./graduate_court.html">Graduate</a></li>
+              <li><a href="./alumni_court.html">Alumni</a></li>
+              <li><a href="./university_court.html">University</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="relative mega-trigger flex-none">
+          <a class="text-secondary bg-base-100 border-none shadow-none text-xl flex items-center gap-1 transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent" href="./participate.html">Participate
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+          </a>
+            <div class="mega-menu bg-base-100 w-auto">
+                <ul class="menu text-lg">
+
+                    <!-- Volunteers hover menu -->
+                    <li class="relative group">
+                    <a href="./volunteers.html" class="flex items-center gap-2">
+                        Volunteers
+                        <svg class="size-4" viewBox="0 0 20 20" fill="currentColor">...</svg>
+                    </a>
+                    <ul class="menu absolute left-full top-0 bg-base-100 rounded-box shadow-lg
+                                opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                                transition-all duration-200 min-w-52 z-50">
+                        <li><a href="./captains.html">Captains</a></li>
+                        <li><a href="./committee_members.html">Committee Members</a></li>
+                    </ul>
+                    </li>
+
+                    <li><a href="./organizations.html">Organizations</a></li>
+                    <li><a href="./forms.html">Forms & Applications</a></li>
+                    <li><a href="./resources.html">Resources</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="flex-none"><a href="https://photos.homecoming.psu.edu" class="transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 bg-transparent">Photos</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end p-3 text-xl">
+      <button class="btn text-xl p-6 bg-secondary text-base-100 transition hover:text-secondary hover:bg-primary duration-1200 ease-in-out hidden lg:flex" onclick="subscribe_modal.showModal()">Subscribe</button>
+      <dialog id="subscribe_modal" class="modal justify-center">
+        <div class="modal-box w-full min-w-5xl text-center p-6">
+          <form method="dialog">
+            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-xl p-8">✕</button>
+          </form>
+          <h3 class="text-6xl font-bold px-4 py-2">Subscribe to our Newsletter!</h3>
+          <form method="POST">
+            <div class="grid grid-cols-2 gap-4 px-4 py-1">
+              <div class="col-span-1">
+                <fieldset class="fieldset">
+                  <legend class="fieldset-legend text-left text-xl">First Name</legend>
+                  <input type="text" class="input input-primary w-full" id="Subscribe_First_Name" placeholder=""/>
+                </fieldset>
+              </div>
+              <div class="col-span-1">
+                <fieldset class="fieldset">
+                  <legend class="fieldset-legend text-left text-xl">Last Name</legend>
+                  <input type="text" class="input input-primary w-full" id="Subscribe_Last_Name" placeholder=""/>
+                </fieldset>
+              </div>
+              <div class="col-span-2">
+                <fieldset class="fieldset w-full">
+                  <legend class="fieldset-legend text-left text-xl">Email</legend>
+                  <input type="email" class="input input-primary w-full validator" id="Subscribe_Email" placeholder="email@domain.com"/>
+                  <div class="validator-hint">Enter valid email address</div>
+                </fieldset>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-full transition hover:btn-secondary duration-900 ease-in-out">Submit</button>
+          </form>
+          <form method="dialog" class="modal-backdrop px-4 py-1">
+            <button>close</button>
+          </form>
+        </div>
+      </dialog>
+    </div>
+    </div>
+
+    <div class="hero w-screen overflow-x-hidden h-[25vh] bg-cover bg-center md:bg-fixed bg-no-repeat relative" style="background-image: url('../files/img/general_hero_img.jpg');">
+        <div class="hero-overlay absolute inset-0 bg-black opacity-40"></div>
+        <div class="absolute left-1/2 transform -translate-x-1/2 text-center text-white">
+            <h1 class="text-6xl md:text-9xl font-bold font-TASA drop-shadow-lg">Captains</h1>
+        </div>
+    </div>
+
+    <div class="bg-gray-800 grid lg:grid-cols-6 grid-cols-1 mx-auto place-items-center text-center gap-3 text-TASA">
+        <div class="col-span-1 px-2 py-6">
+            <a href="#ar_captains" class="btn p-8 bg-gray-800 border-4 border-base-100 text-base-100">Alumni Relations</a>
+        </div>
+        <div class="col-span-1 px-2 py-6">
+            <a href="#comp_captains" class="btn p-8 bg-gray-800 border-4 border-base-100 text-base-100">Competition</a>
+        </div>
+        <div class="col-span-1 px-2 py-6">
+            <a href="#cr_captains" class="btn p-8 bg-gray-800 border-4 border-base-100 text-base-100">Court Relations</a>
+        </div>
+        <div class="col-span-1 px-2 py-6">
+            <a href="#el_captains" class="btn p-8 bg-gray-800 border-4 border-base-100 text-base-100">Event Logistics</a>
+        </div>
+        <div class="col-span-1 px-2 py-6">
+            <a href="#finance_captains" class="btn p-8 bg-gray-800 border-4 border-base-100 text-base-100">Finance</a>
+        </div>
+        <div class="col-span-1 px-2 py-6">
+            <a href="#id_captains" class="btn p-8 bg-gray-800 border-4 border-base-100 text-base-100">Internal Development</a>
+        </div>
+        <div class="col-span-1 px-2 py-6">
+            <a href="#merch_captains" class="btn p-8 bg-gray-800 border-4 border-base-100 text-base-100">Merchandise</a>
+        </div>
+        <div class="col-span-1 px-2 py-6">
+            <a href="#opp_captains" class="btn p-8 bg-gray-800 border-4 border-base-100 text-base-100">OPPerations</a>
+        </div>
+        <div class="col-span-1 px-2 py-6">
+            <a href="#parade_captains" class="btn p-8 bg-gray-800 border-4 border-base-100 text-base-100">Parade</a>
+        </div>
+        <div class="col-span-1 px-2 py-6">
+            <a href="#pr_captains" class="btn p-8 bg-gray-800 border-4 border-base-100 text-base-100">Public Relations</a>
+        </div>
+        <div class="col-span-1 px-2 py-6">
+            <a href="#tech_captains" class="btn p-8 bg-gray-800 border-4 border-base-100 text-base-100">Technology</a>
+        </div>
+        <div class="col-span-1 px-2 py-6">
+            <a href="#ur_captains" class="btn p-8 bg-gray-800 border-4 border-base-100 text-base-100">University Relations</a>
+        </div>
+    </div>
+
+    <div id="ar_captains" class="bg-base-100 text-TASA">
+        <div class="text-center text-secondary text-6xl font-bold pt-15 pb-5 mx-8 border-b-2 border-b-primary">Alumni Relations</div>
+        <div class="grid lg:grid-cols-2 grid-cols-1">
+            <div class="col-span-1 p-8">
+                <div class="text-lg">
+                    The Alumni Relations Committee works closely with the Penn State Alumni Association 
+                    to ensure that alumni have a great experience when they return for Homecoming events, 
+                    as well as to highlight the successes and achievements of Penn State alumni throughout the year. 
+                    We coordinate all logistics involving Homecoming’s Grand Marshal and Honorary Grand Marshal, 
+                    two individuals who exemplify the mission and ideals of this university. We also strive to build 
+                    and maintain a strong relationship between the Homecoming Executive Committee, Penn State alumni, 
+                    and the Penn State community through various events and initiatives, such as the Student-Alumni Ice Cream Social 
+                    and the Tailgate Competition. Our committee color is <span class="font-bold">Royal Blue</span>.
+                </div>
+                <div class="p-5 flex justify-center lg:justify-start">
+                    <button href="" class="btn btn-secondary text-xl px-4 py-6" onclick="ar_captain_modal.showModal()">Positions
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </button>
+                    <dialog id="ar_captain_modal" class="modal">
+                        <div class="modal-box text-left w-full max-w-7xl">
+                            <form method="dialog">
+                                <button class="btn btn-sm btn-circle btn-ghost absolute lg:right-5 lg:top-5 right-5 top-10">✕</button>
+                            </form>
+                            <div class="text-5xl font-bold text-TASA text-secondary py-4 mx-5 my-2 border-b-2 border-primary">
+                                Alumi Relations Captain Positions
+                            </div>
+                            <div class="py-4 m-5">
+                                <span class="font-bold">Inter Committee Liaison/Student-Alumni Ice Cream Social (1)</span>
+                                <br>
+                                This captain will act as the Administrative Assistant and plan the Student-Alumni Ice Cream Social. 
+                                As the Administrative Assistant they will work closely with the Alumni Relations Director in organizing 
+                                team building events and acting as the main connection between Alumni Relations and other committees. 
+                                Their responsiblities will include taking meeting minutes, checking and collaborating with other captains, 
+                                and designing/ordering all Alumni Relations Committee merchandise. The ICS role requires they work closely 
+                                with the Alumni Association to formulate the event layout, entertainment and activities, and the timeline. 
+                                This captain will be responsible for reaching out to performing organizations, student organizations, 
+                                and the student population in order to increase attendance and help advertise the events. This captain will 
+                                also act as the liaison between Alumni Relations and Financial Management, working with the 
+                                Financial Management Fiscal Tracking Captains to track the committee’s expenses throughout the year. 
+                                This individual must demonstrate creativity and an ability to work through event planning logistics while 
+                                being organized and have strong communication skills.
+                                <br>
+                                <span class="font-bold">Alumni Court (1)</span>
+                                <br>
+                                This captain is in charge of all logistics pertaining to the Penn State Homecoming Alumni Court. 
+                                This individual will oversee the publicizing of the court, as well as the application and interview process. 
+                                This individual will be responsible for maintaining and promoting good relationships between any 
+                                Alumni chapters and groups involved in the process. Once the Alumni Court is selected, this individual 
+                                is tasked with acting as the liaison between Homecoming and the Alumni Court. During Homecoming Week, 
+                                this captain will go to Court Reception (along with your GM/HGM Liaison) to introduce the court to the 
+                                audience. They will also escort the court to Vehicle Grounds and meet them at the end of the route to escort 
+                                them to FFT on Parade Day.
+                                <br>
+                                <span class="font-bold">Alumni Engagement: Social Media (1)</span>
+                                <br>
+                                This captain will be in charge of working with the Alumni Association to promote alumni recognition 
+                                beyond just Homecoming Week. They will be responsible for utilizing our social media platforms, 
+                                especially LinkedIn, to connect with accomplished alumni and reach out to interview them for the 
+                                Alumni Spotlight Initiative. They will work closely with PR for the Spotlights and with use of 
+                                Homecoming Social Media. This captain should be ambitious in their efforts to stay engaged with and 
+                                highlight the successes of alumni through online platforms and be comfortable demonstrating professionalism 
+                                while interviewing these alumni. This captain should be enthusiastic in their interactions and creative in 
+                                finding new ways to highlight Penn State alumni. This captain will work closely with the other 
+                                Alumni Engagement: Events Captain to highlight additional events.
+                                <br>
+                                <span class="font-bold">Alumni Engagement: Events (1)</span>
+                                <br>
+                                This captain will be in charge of working with the Alumni Association to promote student engagement 
+                                with alumni beyond just Homecoming Week, including guest speakers, luncheons with L’AMBS and BWS and 
+                                networking events. They will work closely with the Administrative Assistant, as well as the 
+                                Alumni Association, to create new events and initiatives that will further engage students and alumni. 
+                                They will also work with their director to continue to grow AlumniTalks. They should be ambitious in their 
+                                efforts to stay engaged with and highlight the successes of alumni and will be in charge of creating new ways 
+                                to gate our alumni involved throughout this years’ Homecoming season and leading up to it. This captain 
+                                should demonstrate professionalism and have strong communication skills to other Homecoming volunteers and 
+                                incoming Alumni.
+                                <br>
+                                <span class="font-bold">Grand Marshal/Honorary Grand Marshal Captain (2)</span>
+                                <br>
+                                This captain will be in charge of maintaining contact with Homecoming’s Grand Marshal and 
+                                Honorary Grand Marshal prior to and throughout Homecoming Week, ensuring that they are aware of the 
+                                timeline and other important information. They are in charge of promoting the Grand Marshal and 
+                                Honorary Grand Marshal to the Penn State population, including planning how they will be revealed and 
+                                sharing how these individuals have contributed to the Penn State community. This individual must be 
+                                organized, demonstrate professionalism, and have strong communication skills. During Homecoming Week, 
+                                this captain will go to Court Reception (along with your Alumni Court Captain) to introduce the GM and HGM. 
+                                Additionally, this captain will escort the GM and HGM to Vehicle Grounds and F&FT on Parade Day.
+                            </div>
+                        </div>
+                        <form  method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+            <div class="col-span-1 p-8 items-center justify-center flex">
+                <img src="../files/img/ar_committee.jpg" alt="" class="rounded-2xl lg:max-w-lg max-w-xs">
+            </div>
+        </div>
+    </div>
+
+    <div id="comp_captains" class="bg-base-300 text-TASA">
+        <div class="text-center text-secondary text-6xl font-bold pt-15 pb-5 mx-8 border-b-2 border-b-primary">Competition</div>
+        <div class="grid lg:grid-cols-2 grid-cols-1">
+            <div class="col-span-1 p-8 items-center justify-center lg:flex hidden">
+                <img src="../files/img/comp_committee.jpg" alt="" class="rounded-2xl max-w-lg">
+            </div>
+            <div class="col-span-1 p-8">
+                <div class="text-lg">
+                    The Competition Committee is responsible for coordinating the registration of student organizations 
+                    and the scoring/judging for all competition events – Float, Madhatter, and Banner. We continue to develop 
+                    the point system for all Homecoming events as well as manage the Homecoming Guide. All aspects of Homecoming 
+                    pertaining to competition fall within this committee. We are also in charge of all communication between 
+                    Homecoming and the competing organizations. We work to recruit new organizations and remain as an available 
+                    resource for all Homecoming information. Our committee color is <span class="font-bold">Pink</span>.
+                </div>
+                <div class="p-5 flex justify-center lg:justify-start">
+                    <button href="" class="btn btn-secondary text-xl px-4 py-6" onclick="comp_captain_modal.showModal()">Positions
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </button>
+                    <dialog id="comp_captain_modal" class="modal">
+                        <div class="modal-box text-left w-full max-w-7xl">
+                            <form method="dialog">
+                                <button class="btn btn-sm btn-circle btn-ghost absolute lg:right-5 lg:top-5 right-5 top-10">✕</button>
+                            </form>
+                            <div class="text-5xl font-bold text-TASA text-secondary py-4 mx-5 my-2 border-b-2 border-primary">
+                                Competition Captain Positions
+                            </div>
+                            <div class="py-4 m-5">
+                                <span class="font-bold">Events & Registration (1)</span>
+                                <br>
+                                The Event Captain should be outgoing, organized, have good communication skills, and be willing to 
+                                reach out to distinguished Penn State students, faculty, and alumni. The Events/Registration Captain 
+                                is responsible for the organization of the Madhatter Competition, Banner Competition, and Competitor 
+                                Registration. This captain is also responsible for being present to greet the judges and explain the 
+                                scoring process of Banner Competition. This Captain will also oversee the execution of all areas of the 
+                                Madhatter Competition. This Captain will also be working with the financial Management Director on 
+                                Competitor Registration.
+                                <br>
+                                <span class="font-bold">Organization Liaisons (3)</span>
+                                <br>
+                                The Event Captain should be outgoing, organized, have good communication skills, and be willing to 
+                                reach out to distinguished Penn State students, faculty, and alumni. The Events/Registration Captain 
+                                is responsible for the organization of the Madhatter Competition, Banner Competition, and Competitor 
+                                Registration. This captain is also responsible for being present to greet the judges and explain the 
+                                scoring process of Banner Competition. This Captain will also oversee the execution of all areas of 
+                                the Madhatter Competition. This Captain will also be working with the financial Management Director 
+                                on Competitor Registration.
+                                <br>
+                                <span class="font-bold">Points (1)</span>
+                                <br>
+                                The Point Master Captain is required to attend all events at which Spirit and/or Competition Points 
+                                are available and will oversee signing in organization members to receive points. They are required 
+                                to create detailed spreadsheets that will be used by themselves as well as Competition Captains to 
+                                keep track of all Competition and Spirit Points for each specific event. These captains should be 
+                                organized, prompt, and have some experience in creating spreadsheets (Excel).
+                                <br>
+                                <span class="font-bold">Rules & Regulations (1)</span>
+                                <br>
+                                The Rules & Regulations Captain will be responsible for administering deductions according to the 
+                                rules set forth in the Rulebook and will be required to create Rulebook quizzes that will be given 
+                                to Competition Captains as well as Homecoming Chairs of each organization. This captain is also 
+                                responsible for overseeing the making of rubrics for the events as well as competitor inspections. 
+                                This captain should be organized and will work with Parade on all requirements for the Float Competition.
+                            </div>
+                        </div>
+                        <form  method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+            <div class="col-span-1 p-8 items-center justify-center lg:hidden flex">
+                <img src="../files/img/comp_committee.jpg" alt="" class="rounded-2xl max-w-xs">
+            </div>
+        </div>
+    </div>
+    
+    <div id="cr_captains" class="bg-base-100 text-TASA">
+        <div class="text-center text-secondary text-6xl font-bold pt-15 pb-5 mx-8 border-b-2 border-b-primary">Court Relations</div>
+        <div class="grid lg:grid-cols-2 grid-cols-1">
+            <div class="col-span-1 p-8">
+                <div class="text-lg">
+                    The Court Relations Committee is responsible for coordinating the selection of the Homecoming Student, 
+                    University, and Graduate Courts, as well as planning various related events throughout the year. We 
+                    review court applications and nominations, as well as coordinate a student leader panel for the University 
+                    and Graduate Court selection, and a faculty panel for selection of the Student Court. These individuals will 
+                    develop creative ways to advertise voting for the Guide State Forward Award and increase the involvement of the 
+                    Courts throughout the year in Homecoming. Court Relations captains also strive to meet, connect, and select members 
+                    of the Penn State community to participate in our court who represent the values of Penn State and do everything 
+                    For The Glory. Our committee color is <span class="font-bold">Purple</span>.
+                </div>
+                <div class="p-5 flex justify-center lg:justify-start">
+                    <button href="" class="btn btn-secondary text-xl px-4 py-6" onclick="cr_captain_modal.showModal()">Positions
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </button>
+                    <dialog id="cr_captain_modal" class="modal">
+                        <div class="modal-box text-left w-full max-w-7xl">
+                            <form method="dialog">
+                                <button class="btn btn-sm btn-circle btn-ghost absolute lg:right-5 lg:top-5 right-5 top-10">✕</button>
+                            </form>
+                            <div class="text-5xl font-bold text-TASA text-secondary py-4 mx-5 my-2 border-b-2 border-primary">
+                                Court Relations Captain Positions
+                            </div>
+                            <div class="py-4 m-5">
+                                <span class="font-bold">Events (2)</span>
+                                <br>
+                                The Events Captain is responsible for planning events in celebration of the selection of the 2026 
+                                Homecoming Court. This includes Court Reception, Court Workshop, and Court Crashes. They also 
+                                communicate with the Alumni Association and Staff at the Hintz Center to prepare for these events. 
+                                This captain will lead initiatives and conversations throughout the year to bring up common Diversity, 
+                                Equity, and Inclusion issues, and is responsible for taking meeting minutes and fostering morale and 
+                                bonding within the committee.
+                                <br>
+                                <span class="font-bold">Student Court (1-2)</span>
+                                <br>
+                                The Student Court Captain(s) coordinates all efforts involving the Homecoming 2026 Student Court. 
+                                This includes communicating with the past court and involving them in Spring events for Homecoming. 
+                                These Captains are also responsible for the nomination, application, voting, and selection of the 
+                                Student Court for Homecoming 2026. This also involves assisting in the coordination of the Faculty Panel 
+                                and ensuring the appearance of the Homecoming Student Court at events throughout Homecoming Week.
+                                <br>
+                                <span class="font-bold">University Court (1)</span>
+                                <br>
+                                The University Court Captain is involved in the coordination of all things surrounding the University Court 
+                                of Homecoming 2026. This includes the nomination and selection of the Court as well as the appearance of the 
+                                Court at events throughout Homecoming Week. This captain will also work with the Graduate Court Captain to 
+                                select a Student Panel.
+                                <br>
+                                <span class="font-bold">Graduate and Professional School Court (1)</span>
+                                <br>
+                                The Graduate and Professional School Court Captain is in charge of the coordination of all things surrounding 
+                                the Graduate Court for Homecoming 2026. This includes the nomination and selection of the Court as well as the 
+                                appearance of the court at events throughout Homecoming Week. This will include outreach efforts to different 
+                                graduate organizations to make them aware of nominations. This captain will also work with the University Court 
+                                Captain to select a Student Panel.
+                            </div>
+                        </div>
+                        <form  method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+            <div class="col-span-1 p-8 items-center justify-center flex">
+                <img src="../files/img/cr_committee.jpg" alt="" class="rounded-2xl lg:max-w-lg max-w-xs">
+            </div>
+        </div>
+    </div>
+
+    <div id="el_captains" class="bg-base-300 text-TASA">
+        <div class="text-center text-secondary text-6xl font-bold pt-15 pb-5 mx-8 border-b-2 border-b-primary">Event Logistics</div>
+        <div class="grid lg:grid-cols-2 grid-cols-1">
+            <div class="col-span-1 p-8 items-center justify-center lg:flex hidden">
+                <img src="../files/img/el_committee.jpg" alt="" class="rounded-2xl max-w-lg">
+            </div>
+            <div class="col-span-1 p-8">
+                <div class="text-lg">
+                    The Event Logistics Committee is responsible for planning major events such as Legacy, Allen Street Jam, 
+                    Past to Present, the Best of Penn State Carnival, and the Friends & Family Tent on Parade Day. These events 
+                    help unite the Penn State community throughout the year by engaging all aspects of the university and teaching 
+                    them about historical traditions that makes Penn State what it is today. We want to bring all Nittany Lions 
+                    together through celebrating Penn State! Our committee color is <span class="font-bold">Light Blue</span>.
+                </div>
+                <div class="p-5 flex justify-center lg:justify-start">
+                    <button href="" class="btn btn-secondary text-xl px-4 py-6" onclick="el_captain_modal.showModal()">Positions
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </button>
+                    <dialog id="el_captain_modal" class="modal">
+                        <div class="modal-box text-left w-full max-w-7xl">
+                            <form method="dialog">
+                                <button class="btn btn-sm btn-circle btn-ghost absolute lg:right-5 lg:top-5 right-5 top-10">✕</button>
+                            </form>
+                            <div class="text-5xl font-bold text-TASA text-secondary py-4 mx-5 my-2 border-b-2 border-primary">
+                                Event Logistics Captain Positions
+                            </div>
+                            <div class="py-4 m-5">
+                                <span class="font-bold">Allen Street Jam (1)</span>
+                                <br>
+                                This captain is responsible for planning and executing the Allen Street Jam, a street fair held 
+                                on the Monday of Homecoming Week to kick-off the week-long celebration. They will be in charge of 
+                                all aspects of the event, including, but not limited to, organizing the layout of the event, 
+                                coordinating an entertainment timeline, gathering and reaching out to potential vendors, working 
+                                with the State College Borough and reaching out to organizations for booths, along with set up and 
+                                tear down of the event. They will work with other committees (mainly Talent Relations) to coordinate 
+                                performances and stage events. They will also serve as the primary contact on the day of their event. 
+                                This captain should have a strong work ethic, interpersonal skills, creativity and organizational skills.
+                                <br>
+                                <span class="font-bold">Past to Present (1)</span>
+                                <br>
+                                This captain is responsible for planning and executing Past to Present, an event held on the Tuesday of 
+                                Homecoming Week. Past to Present encompasses the history of Penn State and how it has developed into 
+                                the Penn State that we see today. They will be in charge of all aspects of the event, including, but not 
+                                limited to, organizing the layout of the event, creating a ‘living museum’ of Penn State History, reaching 
+                                out to and collaborating with potential organizations to assist with the event, communicating and contracting 
+                                with external vendors, along with set up and tear down of the event. They will also serve as the primary contact 
+                                on the day of their event. This captain should have a strong work ethic, interpersonal skills, creativity and 
+                                organizational skills.
+                                <br>
+                                <span class="font-bold">Best of Penn State Carnival (1)</span>
+                                <br>
+                                This captain is responsible for planning and executing the annual Best of Penn State Carnival (BOPS Carnival), 
+                                held on the Wednesday of Homecoming Week. They will be in charge of all aspects of the event, including, but not 
+                                limited to, organizing the layout of the event, reaching out to and communicating with potential vendors to find 
+                                large attractions, working on the timeline for the event, contacting student organizations and coordinating their 
+                                involvement in the event, along with set up and tear down of the event. They will also serve as the primary contact 
+                                on the day of their event. This captain should have a strong work ethic, interpersonal skills, creativity and organizational skills.
+                                <br>
+                                <span class="font-bold">Family & Friends Tent (1)</span>
+                                <br>
+                                This captain is responsible for planning and executing the Friends & Family Tent (FFT) on parade day, which 
+                                is where distinguished alumni, guests of the Homecoming Executive Committee, Student Court, and Faculty Court 
+                                sit during the parade. This captain will be in charge of all aspects of the event, including, but not limited to, 
+                                arranging the guest list, sending out invitations and save the date reminders, creating and distributing VIP passes, 
+                                coordinating food and refreshments, along with set up and tear down of the event. This captain is also encouraged to 
+                                find a creative way to recognize the Homecoming Executive Committee at the event. They will also serve as the primary 
+                                contact on the day of their event. This captain should have a strong work ethic, interpersonal skills, creativity and 
+                                organizational skills. This captain also has to work well independently as the Pride Events director will be at Parade 
+                                Grounds for most of the event.
+                                <br>
+                                <span class="font-bold">Entertainment Coordinators (2)</span>
+                                <br>
+                                These captains are responsible for planning and executing all the entertainment for Homecoming events prior to and during 
+                                Homecoming Week. These captains will be in charge of making the playlists for events, the timeline for the For The Glory 
+                                Talent Show, the ASJ Dance Competition, and the Drag Show . These Captains will be working throughout the year to find new 
+                                and exciting talent, as well as create a timeline and schedule for both events. Responsibilities include contacting, auditioning, 
+                                and selecting all bands to perform throughout Homecoming. These captains will also work with the Technology committee to ensure 
+                                that performer groups’ music files are received by the committee. These Captains must be organized, well spoken, and confident 
+                                in their event planning skills.
+                                <br>
+                                <span class="font-bold">Event Liaison (1)</span>
+                                <br>
+                                This captain is responsible for planning and executing the Spring Homecoming event Legacy, alongside the Event Logistics Director. 
+                                During the planning of Legacy this captain will learn what goes into executing an event and following Legacy will transition to 
+                                the Event Liaison Captain and foster a relationship between the Event Logistics Captains and Event Logistics Director. 
+                                This captain must be highly motivated, flexible and responsible. This captain will hold major Homecoming Week responsibilities 
+                                in times when the EL director is not present. The second-in command position must offer tremendous support to both the Event 
+                                Logistics Director and the captains throughout the year during the planning and execution of all Homecoming Week Events.
+                            </div>
+                        </div>
+                        <form  method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+            <div class="col-span-1 p-8 items-center justify-center lg:hidden flex">
+                <img src="../files/img/el_committee.jpg" alt="" class="rounded-2xl max-w-sm">
+            </div>
+        </div>
+    </div>
+
+    <div id="finance_captains" class="bg-base-100 text-TASA">
+        <div class="text-center text-secondary text-6xl font-bold pt-15 pb-5 mx-8 border-b-2 border-b-primary">Finance</div>
+        <div class="grid lg:grid-cols-2 grid-cols-1">
+            <div class="col-span-1 p-8">
+                <div class="text-lg">
+                    The Financial Management Committee works to prepare Homecoming’s operating budget for submission to the 
+                    Student Fee Board and manages all transactions related to Homecoming’s Associated Student Activities account. 
+                    The Financial Management Committee is also responsible for securing all donations, both in-kind, food and beverage, 
+                    and monetary, per request of the Executive Committee. The committee also plans and coordinates all fundraising events 
+                    including sporting event/concert concession and fundraisers at businesses located in State College. Lastly, they will 
+                    work to develop positive relationships with all sponsors and ensure that they receive the appropriate entitled benefits. 
+                    Our committee color is <span class="font-bold">Kelly Green</span>.
+                </div>
+                <div class="p-5 flex justify-center lg:justify-start">
+                    <button href="" class="btn btn-secondary text-xl px-4 py-6" onclick="finance_captain_modal.showModal()">Positions
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </button>
+                    <dialog id="finance_captain_modal" class="modal">
+                        <div class="modal-box text-left w-full max-w-7xl">
+                            <form method="dialog">
+                                <button class="btn btn-sm btn-circle btn-ghost absolute lg:right-5 lg:top-5 right-5 top-10">✕</button>
+                            </form>
+                            <div class="text-5xl font-bold text-TASA text-secondary py-4 mx-5 my-2 border-b-2 border-primary">
+                                Finance Captain Positions
+                            </div>
+                            <div class="py-4 m-5">
+                                <span class="font-bold">Fiscal Tracking A (1)</span>
+                                <br>
+                                These Captains are responsible for tracking all internal expenses and profits of Homecoming. 
+                                They will work closely with the Financial Management Director to manage various committee budgets 
+                                and fiscal reports throughout the year. Core responsibilities include merchandise profit analysis, 
+                                profit/expense report tracking, and committee budget management. This position will also entail 
+                                educating all Inter-Committee Liaisons and Financial Management Liaisons on proper financial 
+                                recording methods and fiscal tracking. *This role also includes assisting Captain B in providing 
+                                data and financial insights needed to create the monthly executive summaries.
+                                <br>
+                                <span class="font-bold">Fiscal Tracking B (1)</span>
+                                <br>
+                                Captains will be responsible for creating a monthly executive summary that breaks down spending by 
+                                committee and includes data visualizations,such as dashboards or reports created using tools like 
+                                Tableau or similar platforms,to clearly communicate financial trends to leadership. These Captains will 
+                                be responsible for tracking the budgets for fiscally focused committees, which include the Internal 
+                                Development, OPPerations, Parade, Pride Events, Public Relations, Talent Relations, and University Relations 
+                                committees. They will also help the Financial Management Director lead the Fiscal Tracking Group in 
+                                meetings. Detail orientation and Excel experience are preferred skills.
+                                <br>
+                                <span class="font-bold">Purchasing/Payment (1)</span>
+                                <br>
+                                Captains will oversee the tracking of all payments and charges from organizations and external companies, 
+                                maintaining accurate financial records through a newly revamped Excel tracking system. Purchasing Captains 
+                                will work closely with the Parade and Competition Committees to coordinate float-related needs and support 
+                                competition logistics. In addition to purchasing, these Captains will research quotes from various vendors, 
+                                identify cost-effective options, and work to find sustainable alternatives to common supplies. Overall, 
+                                this Captain plays a key role in purchasing, tracking, and allocating the resources that fuel all of Homecoming!
+                            </div>
+                        </div>
+                        <form  method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+            <div class="col-span-1 p-8 items-center justify-center flex">
+                <img src="../files/img/finance_committee.jpg" alt="" class="rounded-2xl lg:max-w-lg max-w-xs">
+            </div>
+        </div>
+    </div>
+
+    <div id="id_captains" class="bg-base-300 text-TASA">
+        <div class="text-center text-secondary text-6xl font-bold pt-15 pb-5 mx-8 border-b-2 border-b-primary">Internal Development</div>
+        <div class="grid lg:grid-cols-2 grid-cols-1">
+            <div class="col-span-1 p-8 items-center justify-center lg:flex hidden">
+                <img src="../files/img/id_committee.jpg" alt="" class="rounded-2xl max-w-lg">
+            </div>
+            <div class="col-span-1 p-8">
+                <div class="text-lg">
+                    Internal Development is responsible for the well-being and growth of all Penn State Homecoming members. 
+                    We ensure that directors, captains, and committee members have access to all resources and information 
+                    they need to succeed while additionally creating opportunities for all members to connect, learn, and 
+                    celebrate together. ID facilitates the Captain's Cup, a competition between Homecoming's different committees 
+                    to see who can get the most points by participating and fostering teamwork through fun challenges and bonding 
+                    experiences. Beyond team building, ID prioritizes leadership growth by organizing professional development workshops 
+                    and hosting speakers. Overall, Internal Development strives to make Penn State Homecoming a welcoming, supportive, 
+                    and positive experience for everyone involved. Our committee color is <span class="font-bold">Cherry Red</span>.
+                </div>
+                <div class="p-5 flex justify-center lg:justify-start">
+                    <button href="" class="btn btn-secondary text-xl px-4 py-6" onclick="id_captain_modal.showModal()">Positions
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </button>
+                    <dialog id="id_captain_modal" class="modal">
+                        <div class="modal-box text-left w-full max-w-7xl">
+                            <form method="dialog">
+                                <button class="btn btn-sm btn-circle btn-ghost absolute lg:right-5 lg:top-5 right-5 top-10">✕</button>
+                            </form>
+                            <div class="text-5xl font-bold text-TASA text-secondary py-4 mx-5 my-2 border-b-2 border-primary">
+                                Internal Development Captain Positions
+                            </div>
+                            <div class="py-4 m-5">
+                                <span class="font-bold">Internal Engagement (1)</span>
+                                <br>
+                                The Internal Engagement Captain assists the Internal Development Director in coordinating logistics 
+                                and creative elements for Captain workshops, banquets, and other events to help bolster the overall 
+                                improvement of Homecoming’s internal involvement. This role ensures these events run smoothly and foster 
+                                collaboration among all members of Homecoming by strengthening our internal community.
+                            </div>
+                        </div>
+                        <form  method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+            <div class="col-span-1 p-8 items-center justify-center lg:hidden flex">
+                <img src="../files/img/id_committee.jpg" alt="" class="rounded-2xl max-w-xs">
+            </div>
+        </div>
+    </div>
+    
+    <div id="merch_captains" class="bg-base-100 text-TASA">
+        <div class="text-center text-secondary text-6xl font-bold pt-15 pb-5 mx-8 border-b-2 border-b-primary">Merchandise</div>
+        <div class="grid lg:grid-cols-2 grid-cols-1">
+            <div class="col-span-1 p-8">
+                <div class="text-lg">
+                    The Merchandise Committee is responsible for the ordering and sales of all merchandise for Homecoming. 
+                    We work to find innovative ways to create, market, and sell Homecoming merchandise, and to emphasize 
+                    brand pervasiveness, consistency, and customer service. We are responsible for maintaining the inventory 
+                    of all merchandise and for documenting merchandise purchases throughout the year. We also coordinate all 
+                    online store orders and ensure the online store is operating correctly. The Merchandise Committee strives 
+                    to celebrate Homecoming through the sale of quality products and cutting-edge designs. Our committee color is 
+                    <span class="font-bold">Sapphire Blue</span>.
+                </div>
+                <div class="p-5 flex justify-center lg:justify-start">
+                    <button href="" class="btn btn-secondary text-xl px-4 py-6" onclick="merch_captain_modal.showModal()">Positions
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </button>
+                    <dialog id="merch_captain_modal" class="modal">
+                        <div class="modal-box text-left w-full max-w-7xl">
+                            <form method="dialog">
+                                <button class="btn btn-sm btn-circle btn-ghost absolute lg:right-5 lg:top-5 right-5 top-10">✕</button>
+                            </form>
+                            <div class="text-5xl font-bold text-TASA text-secondary py-4 mx-5 my-2 border-b-2 border-primary">
+                                Merchandise Captain Positions
+                            </div>
+                            <div class="py-4 m-5">
+                                <span class="font-bold">Administrative Assistant (1)</span>
+                                <br>
+                                The Administrate Assistant will be responsible for the organizational and financial aspects 
+                                of the Merchandise Committee throughout the year. This Captain will understand the inner 
+                                workings of their Committee and work closely with their Director to be knowledgeable about 
+                                all operational aspects of their Committee. The Administrative Assistant will oversee recording 
+                                meeting minutes, sending recap and reminder emails, and designing committee merchandise. This Captain 
+                                will also be responsible for planning all committee gatherings such as retreat, and committee bonding 
+                                events. Additionally, this Captain will serve as a liaison between the Merchandise and the Financial 
+                                Management Committees. The Administrative Assistant will be responsible for maintaining a financial 
+                                tracking database and creating reports using that information for the Director. They must be able to 
+                                create income statements, expense reports, and invoices in Excel to analyze merchandise sales. Keeping 
+                                track of finances is crucial to ensuring our success as a committee, so this Captain will also assist in 
+                                keeping track of Committee-specific merchandise ordered throughout the year. They will work to assist in 
+                                cost analysis for inventory and for promotions. This Captain will also work with the Merchandise Director 
+                                and Financial Management Committee to create a standard system for tracking merchandise financials from 
+                                year to year. Additionally, they will be expected to work with Financial Management’s Fiscal Tracking Captains 
+                                to track the committee’s expenses throughout the year and to attend Fiscal Tracking Focus Groups. The Administrative 
+                                Assistant should be very organized, prompt with emails, adaptable and eager to learn.
+                                <br>
+                                <span class="font-bold">Graphic Design (1)</span>
+                                <br>
+                                The Graphic Design Captain will be in charge of all the graphic design needs that the Merchandise committee may have. 
+                                They will work to share ideas and develop new items and logos for Homecoming gear. This Captain may also be assigned 
+                                to individual tasks such as designing specific-committee merchandise, or graphics. The Graphic Design Captain will act 
+                                as a liaison to the Public Relations Committee to ensure Homecoming’s brand pervasiveness and consistency across the 
+                                Penn State community. This Captain will also be asked to design the posters for merch sales as well as promotional 
+                                materials to be posted on Homecoming’s social media platforms. Lastly, the Graphic Designer will also be aiding the 
+                                Director with reviewing all Homecoming competitors’ merchandise before participating in Homecoming events to make sure 
+                                all attire is Homecoming appropriate. The ideal candidate should be extremely creative and dedicated and have an interest 
+                                in fashion and design. This Captain must be proficient in using Photoshop or other graphic design programs and must 
+                                provide a portfolio with at least three pieces of work with the application.
+                                <br>
+                                <span class="font-bold">Inventory Logistics (1)</span>
+                                <br>
+                                The major responsibility of the Logistical Inventory Captain is to ensure all sales locations are supplied with merchandise. 
+                                Merchandise needs to be inventoried after every sale; therefore, they will be asked to keep accurate records of inventory, 
+                                spot any trends in selling to communicate with the Ordering Captain, and work together with the Financial Management Liaison 
+                                Captain to produce reports on all items sold. This includes working with the Ordering Captain to establish a logical system 
+                                to determine how much inventory to order. This Captain must also have a way to record the quantity of each item sold at each sale. 
+                                The Inventory Captains will also assist in the organization and maintenance of the merchandise storage room. Additionally, the 
+                                Inventory Captains will work with the Head of Sales Captains to ensure all sales and display bins are accurately stocked before 
+                                and after each sale. This Captain must be very organized, proficient with Excel (or other spreadsheet software), strong communication 
+                                skills, and flexible.
+                                <br>
+                                <span class="font-bold">Inventory Outreach (1)</span>
+                                <br>
+                                The major responsibility of the Outreach Inventory Captain is to ensure all sales locations are supplied with merchandise. 
+                                Merchandise needs to be inventoried after every sale; therefore, they will be asked to keep accurate records of inventory 
+                                with the other Inventory Captain. This position will also involve managing the merchandise online store. Online store 
+                                responsibilities include packing and shipping all online orders and responding to customer service questions via e-mail. 
+                                The Inventory Captains will also assist in the organization and maintenance of the merchandise storage room. This Captain 
+                                will be responsible for distributing all internal Homecoming merchandise (e.g., on-shift shirts and Forever shirts). Additionally, 
+                                the Inventory Captains will work with the Head of Sales Captains to ensure all sales and display bins are accurately stocked before 
+                                and after each sale. This Captain must be very organized, be able to respond to e-mails adequately, proficient with Excel 
+                                (or other spreadsheet software), strong communication skills, and adaptable.
+                                <br>
+                                <span class="font-bold">Ordering (1)</span>
+                                <br>
+                                The Ordering Captain will be responsible for placing all orders for Homecoming specific merchandise. This Captain will work 
+                                closely with the Merchandise Director and our vendors to ensure that all merchandise orders are correct. This position will 
+                                also involve preparing the order sheets to be sent out to the vendors in a neat Excel Spreadsheet. This Captain will work 
+                                with the Inventory Outreach Captain to establish a logical system to determine how much inventory to order. Lastly, this 
+                                Captain will work closely with the Merchandise Director to ensure the accurately of the orders and to ensure timely delivery/pickup. 
+                                This Captain must be organized, be able to respond to e-mails promptly, have a strong attention to detail, and be very patient.
+                                <br>
+                                <span class="font-bold">Head of Sales (1)</span>
+                                <br>
+                                The Head of Sales Captain will be responsible for selecting the members of the Merchandise Committee, who will help work 
+                                sales in the HUB and at Homecoming events. They will help build unity within the Merchandise Committee and work with the 
+                                Inter-Committee Liaison to plan activities with the Captains and Committee Members. These Captains must be creative in 
+                                finding ways to keep committee members involved in Homecoming throughout the year. The Head of Sales Captains will not only 
+                                attend weekly meetings with the Merchandise Director and Captains, but they will also be expected to hold weekly meetings 
+                                with their Merchandise Committee. They will also be responsible for creating a schedule for Committee Members and Captains 
+                                to ensure that sales are manned at all times and lead set-up and tear-down procedures. These Captains will make sure all 
+                                Captains and Committee Members are aware of the sale procedures by working with the Merchandise Director to teach the skills 
+                                necessary to best sell our products. Additionally, these Captains will work with the Inventory Captains to ensure all sales 
+                                and display bins are accurately stocked before and after each sale. The Head of Sales Captains must be strong leaders and 
+                                great role models for their Committee.
+                            </div>
+                        </div>
+                        <form  method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+            <div class="col-span-1 p-8 items-center justify-center flex">
+                <img src="../files/img/merch_committee.jpg" alt="" class="rounded-2xl lg:max-w-lg max-w-xs">
+            </div>
+        </div>
+    </div>
+
+    <div id="opp_captains" class="bg-base-300 text-TASA">
+        <div class="text-center text-secondary text-6xl font-bold pt-15 pb-5 mx-8 border-b-2 border-b-primary">OPPerations</div>
+        <div class="grid lg:grid-cols-2 grid-cols-1">
+            <div class="col-span-1 p-8 items-center justify-center lg:flex hidden">
+                <img src="../files/img/opp_committee.jpg" alt="" class="rounded-2xl max-w-lg">
+            </div>
+            <div class="col-span-1 p-8">
+                <div class="text-lg">
+                    The OPPerations Committee is responsible for all of the logistical aspects behind every Homecoming Event. 
+                    We plan and prepare to know how each event will work and ensure that it will run smoothly and safely. 
+                    To do this, we acquire, setup, manage, and teardown all equipment used for each event before, during, 
+                    and after Homecoming Week. We also promote proper waste management at all of our events as a part of our 
+                    zero waste initiatives. The OPPerations Commitee focuses on the inventory that Homecoming currently owns, 
+                    and what they may need to buy throughout the year for various events. We also allocate all resources to other 
+                    committees or organizations. While we often work behind the scenes, OPP plays a pivotal role in the success of 
+                    Penn State Homecoming. Our committee color is <span class="font-bold">Orange</span>.
+                </div>
+                <div class="p-5 flex justify-center lg:justify-start">
+                    <button href="" class="btn btn-secondary text-xl px-4 py-6" onclick="opp_captain_modal.showModal()">Positions
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </button>
+                    <dialog id="opp_captain_modal" class="modal">
+                        <div class="modal-box text-left w-full max-w-7xl">
+                            <form method="dialog">
+                                <button class="btn btn-sm btn-circle btn-ghost absolute lg:right-5 lg:top-5 right-5 top-10">✕</button>
+                            </form>
+                            <div class="text-5xl font-bold text-TASA text-secondary py-4 mx-5 my-2 border-b-2 border-primary">
+                                OPPerations Captain Positions
+                            </div>
+                            <div class="py-4 m-5">
+                                <span class="font-bold">Administrative Assistant (1)</span>
+                                <br>
+                                The Administrative Assistant will work closely with the director throughout Homecoming to help keep 
+                                the entire team educated and aware of their responsibilites within the committee. This captain will 
+                                create recaps of meetings and an overall homecoming timeline, including dates of events and other 
+                                captain obligations. This captain will send out reminders before events to the rest of the committee. 
+                                This position will also work closely with Development Captains to organize other guides/resources for 
+                                the committee. A candidate for this position should be organized and a guide for the committee.
+                                <br>
+                                <span class="font-bold">Equipment Logistics (2)</span>
+                                <br>
+                                The Equipment Logistics Captains are responsible for sourcing all materials and equipment, including 
+                                tables, chairs, and vehicles needed for Homecoming Week. They will work closely with Penn State OPP 
+                                and will be in constant contact with outside vendors and with other Homecoming Committees fulfilling 
+                                their needs for events. These Captain will be working constantly with the Setup/Teardown and PDL Captains 
+                                to plan each event. They will be a leader during event Set Up and Teardown to ensure all equipment is 
+                                handled properly. These captains must understand how to use their equipment, guide others to do the same, 
+                                and need to have a holistic idea of everything happening with the larger inventory items.
+                                <br>
+                                <span class="font-bold">Development A: Morale (1)</span>
+                                <br>
+                                The Morale half of the Development Captains is responsible for facilitating bonding between the captains, 
+                                committee members and members of HEC. This captain is expected to ensure that the captains and the OPP 
+                                committee members are comfortable with working together going into Homecoming Week. They will work closely 
+                                with the Development B Captain to present “Task of the Week” presentations in weekly captain meetings and 
+                                create the Survival Guides for Homecoming Events. They will also plan captain retreats, and schedule meeting 
+                                crashes for OPP committee members to get to know their captains. The ideal candidate for this position is 
+                                outgoing, creative, and collaborative. 
+                                <br>
+                                <span class="font-bold">Development B: Training (1)</span>
+                                <br>
+                                The Training half of the Development Captains is responsible for ensuring that all members of OPP 
+                                (captains and committee members) feel comfortable with their duties during Homecoming Week. They will work 
+                                closely with the Development A Captain to present “Task of the Week” presentations in weekly captain meetings 
+                                and create the Survival Guides for Homecoming Events. They will also work with the Equipment Logistics Captains 
+                                to help guide captains when completing special duties (using equipment, driving vehicles, etc). This captain must 
+                                be able to work well on their feet and act as a resource to the OPP captains, as well as captains from other committees. 
+                                <br>
+                                <span class="font-bold">Inventory Development (1)</span>
+                                <br>
+                                The Inventory Development Captain will be responsible for developing and optimizing an Inventory Management system for 
+                                internal Homecoming and OPP use. This Captain will be expected to work with the Special Projects/Construction Liaison and 
+                                Event Logistic Captains to understand current inventory and update the inventory management system throughout the year. 
+                                Their main project will be Inventory Day and Rope Day in which they lead the organization of the off-campus storage. This 
+                                Captain needs to be organized and data-oriented and have a sound knowledge of Excel or other data management software.
+                                <br>
+                                <span class="font-bold">Parade Day Logistics (3)</span>
+                                <br>
+                                The Parade Day Logistics Captains are responsible for the OPP involvements of the parade. Parade Day Logistics Captains 
+                                will also oversee the OPP committee members and prepare them for the parade. These captains will work together to create 
+                                the Set Up and Tear Down timeline for parade day with the director. As well as this, they will lead the Parade Day Focus 
+                                Group meetings in order to get things organized for the event. They will also work with the Administrative Assistant to 
+                                create OPP’s all homecoming presentation to prepare other committees for parade day. Finally, these captains will work with 
+                                the director to create an action plan for the cone placement and rope organization. Captains may choose to spearhead projects 
+                                individually or work on everything together. PDL Captains should be organized, willing to lead, and team players.
+                                <br>
+                                <span class="font-bold">Parade & Security Liaison (1)</span>
+                                <br>
+                                The Police & Security Captain serves as the primary liaison between Homecoming and various Police Departments. 
+                                This Captain will attend meetings with the Police to ensure that Homecoming is following all protocols and 
+                                fulfilling all security obligations necessary to run a successful Homecoming. This Captain will also act as a 
+                                Police Liaison at the Parade Day Focus Group Meetings. Additionally, they will also be in charge of handling all 
+                                driving records required for vehicle usage. This Captain is also responsible for coordinating and communicating 
+                                with all Parade Day Volunteers. This Captain should be an effective communicator.
+                                <br>
+                                <span class="font-bold">Setup/Teardown (1)</span>
+                                The Set Up/Teardown Captain is responsible for creating the OPP timelines for every Homecoming event other than parade. 
+                                They will work throughout the year to logistically prepare for OPP’s biggest responsibility, the Set Up and Teardown 
+                                of each event, and will work closely with the Logistics and PDFG Captains to effectively coordinate Parade Day. 
+                                They will ensure that all parts of Homecoming events are sufficiently staffed by other committee members. This Captain 
+                                should not only be an effective leader but possess good problem-solving skills and have sufficient knowledge of all Homecoming events.
+                                <br>
+                                <span class="font-bold">Special Project/Construction (3)</span>
+                                <br>
+                                The Special Projects/Inventory Liaison Captains will be responsible for any projects that fall outside the normal 
+                                responsibilities of the OPP committee. They will design and construct all structures requested from other committees. 
+                                These individuals should be creative and comfortable using basic tools necessary for construction. They will need to 
+                                work with the rest of the OPP committee, and with all other committees throughout Homecoming. They will process requests 
+                                from these individuals and work directly with the Inventory Development Captain to understand what inventory we currently 
+                                have, and what to allocate. These 3 captains will need to have an in-depth understanding of our inventory, be very organized, 
+                                and can work well with others.
+                                <br>
+                                <span class="font-bold">Waste Management</span>
+                                <br>
+                                The Waste Management Captains’ focus will be on the environmental impact of Homecoming and will spread Homecoming’s 
+                                sustainability efforts and mission. Throughout the year, this Captain will help lead Inter-Committee Liaisons in their 
+                                Sustainability efforts. This person will be responsible for ensuring proper waste management at all Homecoming Events as 
+                                well as leading Homecoming’s effort to become a zero-waste organization. This Captain will be in charge of planning 
+                                Recycle Your Float Event and Homecoming OPPerations Protecting the Environment (HOPE), a campus-wide Recycling Effort. 
+                                This Captain should be creative, have good organization and communication skills, and have a desire to make an impact.
+                            </div>
+                        </div>
+                        <form  method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+            <div class="col-span-1 p-8 items-center justify-center lg:hidden flex">
+                <img src="../files/img/opp_committee.jpg" alt="" class="rounded-2xl max-w-sm">
+            </div>
+        </div>
+    </div>
+
+    <div id="parade_captains" class="bg-base-100 text-TASA">
+        <div class="text-center text-secondary text-6xl font-bold pt-15 pb-5 mx-8 border-b-2 border-b-primary">Parade</div>
+        <div class="grid lg:grid-cols-2 grid-cols-1">
+            <div class="col-span-1 p-8">
+                <div class="text-lg">
+                    The Parade Committee is responsible for planning, organizing, and executing the largest student-run parade in the nation. 
+                    This entails coordinating the participation of student, alumni, and community organizations in the parade, communicating 
+                    parade policy and procedures to all participants, creating the Parade Order, and managing the set up and tear down of the 
+                    Parade Grounds. The Parade Committee will also perform float safety inspections prior to Parade Day and organize the Recycle 
+                    Your Float event. Our committee color is <span class="font-bold">Safety Green</span>.
+                </div>
+                <div class="p-5 flex justify-center lg:justify-start">
+                    <button href="" class="btn btn-secondary text-xl px-4 py-6" onclick="parade_captain_modal.showModal()">Positions
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </button>
+                    <dialog id="parade_captain_modal" class="modal">
+                        <div class="modal-box text-left w-full max-w-7xl">
+                            <form method="dialog">
+                                <button class="btn btn-sm btn-circle btn-ghost absolute lg:right-5 lg:top-5 right-5 top-10">✕</button>
+                            </form>
+                            <div class="text-5xl font-bold text-TASA text-secondary py-4 mx-5 my-2 border-b-2 border-primary">
+                                Parade Captain Positions
+                            </div>
+                            <div class="py-4 m-5">
+                                <span class="font-bold">Logistics Coordinator (1)</span>
+                                <br>
+                                The Logistics Coordinator will be responsible for all organizational aspects and needs of the 
+                                Parade Committee throughout the year, including taking meeting notes and ordering committee 
+                                merchandise. This captain will also be responsible for all communication with Parade Committee 
+                                members, including preparing for and hosting occasional committee member meetings, sending out 
+                                committee member group reminders, and ensuring all committee member needs are met prior to Parade 
+                                Day. On Parade Day, this captain will be in charge of all participating groups designated as overflow, 
+                                as well as assisting in merge point wherever needed. Additionally, this captain will work closely 
+                                with the Parade Director and the Financial Management Fiscal Tracking Captains to stay up to date 
+                                with the committee’s expenses and payment tracking throughout the year and will be responsible for 
+                                attending Parade Day Focus Group meetings. This captain should be professional, detail-oriented, 
+                                organized, and possess excellent communication skills.
+                                <br>
+                                <span class="font-bold">Alumni/Community Liaison (2)</span>
+                                <br>
+                                The Alumni/Community Liaisons will be responsible for communicating all deadlines, policies, 
+                                procedures, and information to alumni and community members participating in the parade. These 
+                                captains will manage the full intake of alumni and community parade registrations, including 
+                                sending registration confirmations and invoices, check-in information, and reminder emails 
+                                throughout the year. Additionally, these captains will be responsible for frequently checking 
+                                emails and answering any questions concerning a participant’s involvement in the parade. On 
+                                Parade Day, these captains will be in charge of all alumni and community groups checking in, 
+                                as well as assisting with the set up and tear down of the Alumni/Community Walking Grounds. These 
+                                captains should be professional, organized, and possess excellent communication skills.
+                                <br>
+                                <span class="font-bold">Student Organization Liaison (2)</span>
+                                <br>
+                                The Student Organization Liaisons will be responsible for communicating all deadlines, policies, 
+                                procedures, and information to all student organizations participating in the parade. These captains 
+                                will manage the full intake of student organization parade registrations, including sending registration 
+                                confirmations, check-in information, and reminder emails throughout the year. Additionally, these captains 
+                                will be responsible for frequently checking emails and answering any questions concerning a participant’s 
+                                involvement in the parade. On Parade Day, these captains will be in charge of all student organization groups 
+                                checking in, as well as assisting with the set up and tear down of the Student Organization Walking Grounds. 
+                                These captains should be professional, organized, possess excellent communication skills, and be able to work 
+                                effectively in stressful environments.
+                                <br>
+                                <span class="font-bold">VIP/Vehicle Grounds Coordinator (2)</span>
+                                <br>
+                                The VIP/Vehicle Coordinator will be responsible for all organizational aspects of VIP participation in 
+                                the Homecoming Parade throughout the year, including developing the list of potential invitees, sending 
+                                invitations, and tracking RSVPs. This captain will also be responsible for all communication with student, 
+                                alumni, and government VIPs, as well as working with the Community/Donor Relations Liaison to secure vehicles 
+                                for their use in the parade. On Parade Day, this captain will be in charge of all operations relating to the Vehicle 
+                                Grounds, including creating diagrams of the staging grounds, assigning check-in locations and Parade Day arrival times, 
+                                and managing the timely departure of all VIP vehicles to the Parade Route. Additionally, this captain will be responsible 
+                                for overseeing the set up and tear down of the Vehicle Grounds. This captain should be professional, detail-oriented, 
+                                organized, and possess excellent communication skills.
+                                <br>
+                                <span class="font-bold">Float Coordinator (2)</span>
+                                <br>
+                                The Float Coordinator will be responsible for all organizational aspects of Parade Float Grounds throughout the year, 
+                                including securing staging ground reservations with the university and completing all required grounds paperwork. This 
+                                captain will also be responsible for all communication with participating organizations, including creating diagrams of 
+                                the staging grounds, assigning check-in locations and Parade Day arrival times, and ensuring all participant needs are 
+                                met prior to Parade Day. On Parade Day, this captain will be in charge of managing the timely departure of all groups 
+                                from the Float Grounds to the Parade Route, as well as assisting with the set up and tear down of the Float Grounds. 
+                                Additionally, this captain will be responsible for planning and overseeing Recycle Your Float Day on the Sunday following 
+                                the Homecoming Parade. This captain should be professional, detail-oriented, organized, and possess excellent communication skills.
+                            </div>
+                        </div>
+                        <form  method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+            <div class="col-span-1 p-8 items-center justify-center flex">
+                <img src="../files/img/parade_committee.jpg" alt="" class="rounded-2xl lg:max-w-lg max-w-xs">
+            </div>
+        </div>
+    </div>
+
+    <div id="pr_captains" class="bg-base-300 text-TASA">
+        <div class="text-center text-secondary text-6xl font-bold pt-15 pb-5 mx-8 border-b-2 border-b-primary">Public Relations</div>
+        <div class="grid lg:grid-cols-2 grid-cols-1">
+            <div class="col-span-1 p-8 items-center justify-center lg:flex hidden">
+                <img src="../files/img/pr_committee.jpg" alt="" class="rounded-2xl max-w-lg">
+            </div>
+            <div class="col-span-1 p-8">
+                <div class="text-lg">
+                    The Public Relations Committee is responsible for documenting and promoting all events for Homecoming as 
+                    well as showcasing the traditions and stories of Penn State. The Committee consists of videographers, 
+                    photographers, and graphic designers that will be at the Pride Events and other essential Homecoming dates. 
+                    Our mission is to keep the Penn State community such as students, alumni, faculty, and staff involved in the 
+                    tradition by capturing the memories and ensuring our information is clear to the public. Applicants should be 
+                    creative, have some photography or video experience, and have basic editing software knowledge. Applicants should 
+                    submit 5 pictures or videos that demonstrate their skillset. Our committee color is <span class="font-bold">Lavendar</span>.
+                </div>
+                <div class="p-5 flex justify-center lg:justify-start">
+                    <button href="" class="btn btn-secondary text-xl px-4 py-6" onclick="pr_captain_modal.showModal()">Positions
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </button>
+                    <dialog id="pr_captain_modal" class="modal">
+                        <div class="modal-box text-left w-full max-w-7xl">
+                            <form method="dialog">
+                                <button class="btn btn-sm btn-circle btn-ghost absolute lg:right-5 lg:top-5 right-5 top-10">✕</button>
+                            </form>
+                            <div class="text-5xl font-bold text-TASA text-secondary py-4 mx-5 my-2 border-b-2 border-primary">
+                                Public Relations Captain Positions
+                            </div>
+                            <div class="py-4 m-5">
+                                <span class="font-bold">Creative Lead/Content (1)</span>
+                                <br>
+                                The Creative Lead works with various facets of the Public Relations Committee to ensure a 
+                                cohesive brand and effective marketing strategy through all social media, graphic, and photo 
+                                content. They oversee the Social Media and Graphic Design Team and will work with the Photography 
+                                Captains to ensure that all visual content shared throughout the year is representing Homecoming in 
+                                a positive light. This position should be an effective communicator and must possess both an analytical 
+                                and creative vision for Homecomings brand.
+                                <br>
+                                <span class="font-bold">Social Media (2)</span>
+                                <br>
+                                The Social Media Captains will be in charge of maintaining the Homecoming Facebook, Twitter, Instagram, 
+                                and LinkedIn. These captains should be interested in ways to broaden the Homecoming appearance in alternative 
+                                media and should be prepared to work closely with other committees to promote events and share Homecoming news 
+                                and updates. The Social Media Captains will also be in charge of maintaining the brand image and voice of Penn State 
+                                Homecoming. Applicants should have a strong background in social media, possess creativity, excellent writing and 
+                                communication skills, and a strong voice.
+                                <br>
+                                <span class="font-bold">Photography (2)</span>
+                                <br>
+                                The Photography Captains will be in charge of documenting all Homecoming events throughout the year by taking photos. 
+                                In addition, they will be responsible for editing and uploading these pictures in a timely manner. These captains will 
+                                also be responsible for overseeing the photography and production committee with their fellow production captain. These 
+                                captains will work closely with the Social Media Captains, Production Captains, Graphic Design Captains, and the Technology 
+                                Committee. Applicants should have prior photography experience, possess creativity, have a strong understanding of Homecoming’s 
+                                image, and have strong leadership skills. Applicants should present a portfolio.
+                                <br>
+                                <span class="font-bold">Graphic Design (2)</span>
+                                <br>
+                                The Graphic Design Captains are responsible for designing and creating advertisements that will appear in various publications 
+                                and places across campus using Homecoming’s brand guidelines. These captains will also create designs for balloons, flyers, 
+                                and posters used to promote Homecoming. Applicants should have prior experience using Photoshop, InDesign, Illustrator and have 
+                                knowledge of graphic design. Majors in graphic design and advertising are encouraged to apply. Applicants should present a 
+                                portfolio.
+                                <br>
+                                <span class="font-bold">Production (1)</span>
+                                <br>
+                                The Video Media Captains are responsible for filming, producing, and editing all Homecoming videos such as the Emcee Announcement, 
+                                Logo Reveal, Grand Marshal Reveal as well as many others. They will also develop various promotional materials or virtual video 
+                                experiences. These Captains will also be responsible for overseeing a committee while working closely with Social Media to 
+                                produce content. Applicants should be knowledgeable in or eager to learn about DSLR cameras, Adobe Premiere or other video editing 
+                                software. Applicants should be creative, self-motivated, and collaborative. Applicants should present a portfolio.
+                            </div>
+                        </div>
+                        <form  method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+            <div class="col-span-1 p-8 items-center justify-center lg:hidden flex">
+                <img src="../files/img/pr_committee.jpg" alt="" class="rounded-2xl max-w-xs">
+            </div>
+        </div>
+    </div>
+    
+    <div id="tech_captains" class="bg-base-100 text-TASA">
+        <div class="text-center text-secondary text-6xl font-bold pt-15 pb-5 mx-8 border-b-2 border-b-primary">Technology</div>
+        <div class="grid lg:grid-cols-2 grid-cols-1">
+            <div class="col-span-1 p-8">
+                <div class="text-lg">
+                    The Technology committee is responsible for the development and maintenance of the official Homecoming website 
+                    and technological advancement of Homecoming initiatives. This includes regular updates to the website, operating 
+                    the merchandise store, handling applications, registrations, and other content that needs to be on the website. 
+                    Our responsibilities also include taking on projects to enhance the Homecoming experience through technological 
+                    immersion. The Technology Committee is always looking for ways to improve Homecoming through the use of technology 
+                    by increasing efficiency. Our committee color is <span class="font-bold">Gold</span>.
+                </div>
+                <div class="p-5 flex justify-center lg:justify-start">
+                    <button href="" class="btn btn-secondary text-xl px-4 py-6" onclick="tech_captain_modal.showModal()">Positions
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </button>
+                    <dialog id="tech_captain_modal" class="modal">
+                        <div class="modal-box text-left w-full max-w-7xl">
+                            <form method="dialog">
+                                <button class="btn btn-sm btn-circle btn-ghost absolute lg:right-5 lg:top-5 right-5 top-10">✕</button>
+                            </form>
+                            <div class="text-5xl font-bold text-TASA text-secondary py-4 mx-5 my-2 border-b-2 border-primary">
+                                Technology Captain Positions
+                            </div>
+                            <div class="py-4 m-5">
+                                <span class="font-bold">Administrative Assistant (1)</span>
+                                <br>
+                                The Admin/Liaison will be responsible for maintaining regular communication with all other Homecoming committees 
+                                for new projects, updates for the websites, and tracking progress on all assigned projects and tasks. The Admin/Liaison 
+                                will be working closely with the Lead Developer to organize inter-committee requests with the Tech Committee’s timeline. 
+                                They will also be tasked with creating weekly meeting recaps to provide their co-captains with. This role requires strong 
+                                communication skills and the ability to coordinate multiple projects. While not required for this position, understanding of 
+                                WordPress, HTML and CSS can be useful for this position.
+                                <br>
+                                <span class="font-bold">Lead Developer (1)</span>
+                                <br>
+                                The Lead Developer is responsible for leading two small teams of Developers to develop and maintain the Homecoming website 
+                                and special projects, overseeing their functionalities, and ensuring technological innovation align with Homecoming’s goal. 
+                                This role demands proactive thinking, technical proficiency, effective communication skills, and collaboration. While prior 
+                                knowledge of JavaScript, HTML, CSS, and WordPress is not required, a forward-thinking mindset and the ability to lead and 
+                                innovate is useful for this position.
+                                <br>
+                                <span class="font-bold">Web Developer (4)</span>
+                                <br>
+                                Web Developers will be responsible for maintaining active development of the Homecoming website. These captains must be 
+                                technologically innovative and must think outside of the box when it comes to Homecoming’s use of technology. These captains 
+                                should be technically-minded, have strong communication skills, and a willingness to learn. While not required by any means, 
+                                knowledge of JavaScript, HTML, and WordPress is usefully for this position.
+                                <br>
+                                <span class="font-bold">Project Developer (4)</span>
+                                <br>
+                                Project Developers will be responsible for maintaining active development of special projects for Homecoming. These captains 
+                                must be technologically innovative and must think outside of the box when it comes to Homecoming’s use of technology. These 
+                                captains should be technically-minded, have strong communication skills, and a willingness to learn. While not required by any 
+                                means, knowledge of JavaScript, HTML, and WordPress is usefully for this position.
+                                <br>
+                                <span class="font-bold">UI/UX Developer (1)</span>
+                                <br>
+                                UX/UI Developers will be responsible for all front-end development of either the Homecoming website or special projects. 
+                                These captains will ensure that the website and/or special projects are user-friendly by utilizing feedback mechanisms, 
+                                navigational components, and researching user-centered design patterns to further improve the website and/or special 
+                                projects usability. This role requires having strong communication skills, and analyzing and incorporate user feedback 
+                                effectively. Previous experience in UX/UI is encouraged, but not required by any means. Additional experience with WordPress, 
+                                HTML and CSS will be useful for this position.
+                            </div>
+                        </div>
+                        <form  method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+            <div class="col-span-1 p-8 items-center justify-center flex">
+                <img src="../files/img/tech_committee.jpg" alt="" class="rounded-2xl lg:max-w-lg max-w-xs">
+            </div>
+        </div>
+    </div>
+
+    <div id="ur_captains" class="bg-base-300 text-TASA">
+        <div class="text-center text-secondary text-6xl font-bold pt-15 pb-5 mx-8 border-b-2 border-b-primary">University Relations</div>
+        <div class="grid lg:grid-cols-2 grid-cols-1">
+            <div class="col-span-1 p-8 items-center justify-center lg:flex hidden">
+                <img src="../files/img/ur_committee.jpg" alt="" class="rounded-2xl max-w-lg">
+            </div>
+            <div class="col-span-1 p-8">
+                <div class="text-lg">
+                    The University Relations Committee works to increase involvement in Homecoming and serves as the liaison 
+                    between Homecoming, Penn State administrators, student organizations, Penn State Athletics, and faculty. 
+                    University Relations is responsible for planning and coordinating the logistics behind events such as the 
+                    Homecoming Day of Service, Homecoming Golf Tournament, Homecoming Blood Drives, Homecoming Food Drives, and 
+                    more. The University Relations Committee also works to organize various athletics events throughout the year, 
+                    like the Homecoming Basketball Game. They also work with SPA for the concert to kick off Homecoming Week. The 
+                    University Relations Committee is always looking for creative ways to interact with the University and the Penn 
+                    State Community. We dedicate time throughout the entire year, including after Homecoming Week, in order to promote 
+                    a year-round celebration of Penn State Homecoming. Our committee color is <span class="font-bold">Navy</span>.
+                </div>
+                <div class="p-5 flex justify-center lg:justify-start">
+                    <button href="" class="btn btn-secondary text-xl px-4 py-6" onclick="ur_captain_modal.showModal()">Positions
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </button>
+                    <dialog id="ur_captain_modal" class="modal">
+                        <div class="modal-box text-left w-full max-w-7xl">
+                            <form method="dialog">
+                                <button class="btn btn-sm btn-circle btn-ghost absolute lg:right-5 lg:top-5 right-5 top-10">✕</button>
+                            </form>
+                            <div class="text-5xl font-bold text-TASA text-secondary py-4 mx-5 my-2 border-b-2 border-primary">
+                                University Relations Captain Positions
+                            </div>
+                            <div class="py-4 m-5">
+                                <span class="font-bold">Tournament (1)</span>
+                                <br>
+                                This captain will primarily work on the Penn State Homecoming Tournament held on the Sunday before the 
+                                game, to kick off Homecoming week. This captain is responsible for reaching out to sponsors for the 
+                                event to gather items such as prizes for tournament winners, as well as booking the location where the 
+                                event will be held. This captain is also expected to be ready to help their fellow captains when needed. 
+                                This captain should be dedicated, possess strong communication skills, and have strong event planning skills. 
+                                This captain does not require any prior tournament experience. 
+                                <br>
+                                <span class="font-bold">Involvement (2)</span>
+                                <br>
+                                This Captain will work towards increasing Homecoming involvement with the incoming freshmen. This will 
+                                primarily be accomplished by overseeing and leading the First-Year Involvement Committee (FYIC). This 
+                                Captain will promote applications for the committee, review the applications, hold meetings, and plan 
+                                events for them. This Captain will work with other committees to engage FYIC in Homecoming week events 
+                                and find new and innovative tasks that FYIC can undertake. This Captain should dedicate time after Homecoming 
+                                week to encourage FYIC members to stay involved with Homecoming next season. In addition to the work done with 
+                                FYIC, this Captain will produce new material to engage organizations and students in Homecoming activities on 
+                                campus and present this material at involvement fairs and recruitment events. This Captain should be outgoing, 
+                                creative, and passionate about spreading the mission of Homecoming.
+                                <br>
+                                <span class="font-bold">Athletic Engagement (1)</span>
+                                <br>
+                                This Captain will help to coordinate and plan Homecoming athletic events. This Captain will be expected to 
+                                be in contact with the Penn State Athletics Marketing Department to help coordinate existing and future 
+                                participation in athletic events, including but not limited to the Homecoming Basketball, Field Hockey/Lacrosse, 
+                                Soccer, Hockey, Wrestling, and Golf events. This Captain will also be responsible for coming up with new and 
+                                innovative ways of getting students, faculty, and alumni involved at the athletic events. This Captain should 
+                                also develop creative opportunities for all Penn State athletes to be involved in Homecoming Events. This 
+                                Captain should be able to communicate creative ideas to Public Relations for promoting events and be innovative 
+                                when producing programming and activities in a limited space at athletic venues. This Captain should be prepared 
+                                to work on multiple projects at once, have strong communication skills, and be excited about Penn State Athletics.
+                                <br>
+                                <span class="font-bold">Special Events/Tailgate Competition (2)</span>
+                                <br>
+                                This Captain will work closely with the University Relations Director, Penn State officials, and student 
+                                organizations to plan events that promote the values of Homecoming, such as the Blue and White Game and 
+                                events that connect with other Penn State Organizations. Their primary responsibilities include creating 
+                                timelines, registration plans, and connecting Penn State students to Homecoming. This captain will be working 
+                                with SPA for Rally and Roar and other outreach events with other student organizations. This Captain will also 
+                                be in charge of organizing the Homecoming Tailgate Competitions held on Homecoming Gameday. They will be responsible 
+                                for preparing the competition’s rules, categories, and scoring rubric, contacting potential alumni contestants and 
+                                student organizations, and creating a timeline for the day of judging. This Captain will also work with the Sustainability 
+                                Institute to coordinate Homecoming’s involvement in the Tailgate Ambassadors program. In addition to their tailgate-focused 
+                                responsibilities, this Captain will help with other Captains when needed. This Captain should be able to communicate creative 
+                                ideas to Public Relations for promoting all of the events, and be innovative when producing programming and activities in a limited 
+                                space at the venues. This Captain should have great organizational skills and be capable of communicating with many contacts at 
+                                once. Also, this Captain should be prepared to assume immediate responsibilities and should be very passionate about the Penn State 
+                                community, event planning, and logistics.
+                                <br>
+                                <span class="font-bold">Service (1)</span>
+                                <br>
+                                This captain will organize community service events such as the blood drive, Fall and Spring Day of Service, and year-round 
+                                food drive. Primary responsibilities include planning locations, bus routes, and activities for the Day of Service. This captain 
+                                will also communicate with Penn State organizations about attending the Day of Service. This captain will work closely with the 
+                                University Relations Director as well as act as the primary liaison between Homecoming and the Day of Service Locations. This captain 
+                                should be organized, well prepared, dedicated, and passionate about Penn State Homecoming.
+                            </div>
+                        </div>
+                        <form  method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+            <div class="col-span-1 p-8 items-center justify-center lg:hidden flex">
+                <img src="../files/img/ur_committee.jpg" alt="" class="rounded-2xl max-w-sm">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer sm:footer-horizontal bg-secondary-content text-base-content p-10 grid lg:grid-cols-12 grid-cols-1 gap-1">
+        <nav class="col-span-1 lg:col-span-6 px-4">
+        <div class="footer-title font-bold text-primary text-TASA text-2xl">Penn State Homecoming</div>
+        <div class="text-primary text-TASA text-lg">
+            Site designed and maintained by the Homecoming Technology Committee. For site related inquries, contact <a class="link underline" href="mailto:technology@homecoming.psu.edu">technology@homecoming.psu.edu</a>.
+        </div>
+        <div class="text-primary text-TASA text-lg">
+            © 2026 Penn State Homecoming is an affiliated student-run organization under the advisement of the office of Penn State Student Affairs Union and Student Activities.
+        </div>
+        <div class="text-primary text-TASA text-lg">
+            <a href="https://www.psu.edu/web-privacy-statement/" class="link underline">Privacy and Legal Statement</a>
+        </div>
+        </nav>
+        <nav class="col-span-3 px-4">
+        <div class="footer-title font-bold text-primary text-TASA text-2xl">Contact</div>
+        <div class="text-primary text-TASA text-lg">
+            227B HUB<br>
+            University Park, PA 16802
+        </div>
+        <div class="text-primary text-TASA text-lg">Email:
+            <a href="mailto:contact@homecoming.psu.edu" class="link underline">contact@homecoming.psu.edu</a>
+        </div>
+        </nav>
+        <nav class="col-span-2 px-4">
+        <div class="footer-title font-bold text-primary text-TASA text-2xl">
+            Navigation
+        </div>
+        <div class="text-primary text-TASA text-lg">
+            <a href="./directory.html" class="link link-hover">Directory</a><br>
+            <a href="./resources.html" class="link link-hover">Resources</a><br>
+            <a href="./plan_a_visit.html" class="link link-hover">Plan a Visit</a><br>
+            <a href="report_an_organization.html" class="link link-hover">Report an Organization</a>
+        </div>
+        </nav>
+        <nav class="col-span-1 px-4">
+        <div class="footer-title font-bold text-primary text-TASA text-2xl">Social</div>
+        <div class="grid grid-flow-col gap-4">
+            <a>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+            </svg>
+            </a>
+            <a>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+            </svg>
+            </a>
+            <a>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+            </svg>
+            </a>
+        </div>
+        </nav>
+    </footer>
+
+  <script src="../src/scripts.js"></script>
+</body>
+</html>
