@@ -57,7 +57,19 @@
                         <a href="./participate.html" class="flex-1">Participate</a>
                     </summary>
                     <ul class="p-2">
-                        <li><a href="./volunteers.html">Volunteers</a></li>
+                        <li>
+                            <details>
+                                <summary class="flex justify-between items-center">
+                                <a href="./volunteers.html" class="flex-1">
+                                    Volunteers
+                                </a>
+                                </summary>
+                                <ul class="p-2">
+                                <li><a href="./captains.html">Captains</a></li>
+                                <li><a href="./committee_members.html">Committee Members</a></li>
+                                </ul>
+                            </details>
+                        </li>
                         <li><a href="./organizations.html">Organizations</a></li>
                         <li><a href="./forms.html">Forms & Applications</a></li>
                         <li><a href="./resources.html">Resources</a></li>
@@ -126,14 +138,28 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
             </svg>
           </a>
-          <div class="mega-menu bg-base-100 w-auto">
-            <ul class="menu text-lg">
-              <li><a href="./volunteers.html">Volunteers</a></li>
-              <li><a href="./organizations.html">Organizations</a></li>
-              <li><a href="./forms.html">Forms & Applications</a></li>
-              <li><a href="./resources.html">Resources</a></li>
-            </ul>
-          </div>
+            <div class="mega-menu bg-base-100 w-auto">
+                <ul class="menu text-lg">
+
+                    <!-- Volunteers hover menu -->
+                    <li class="relative group">
+                    <a href="./volunteers.html" class="flex items-center gap-2">
+                        Volunteers
+                        <svg class="size-4" viewBox="0 0 20 20" fill="currentColor">...</svg>
+                    </a>
+                    <ul class="menu absolute left-full top-0 bg-base-100 rounded-box shadow-lg
+                                opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                                transition-all duration-200 min-w-52 z-50">
+                        <li><a href="./captains.html">Captains</a></li>
+                        <li><a href="./committee_members.html">Committee Members</a></li>
+                    </ul>
+                    </li>
+
+                    <li><a href="./organizations.html">Organizations</a></li>
+                    <li><a href="./forms.html">Forms & Applications</a></li>
+                    <li><a href="./resources.html">Resources</a></li>
+                </ul>
+            </div>
         </li>
         <li class="flex-none"><a href="https://photos.homecoming.psu.edu" class="transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 bg-transparent">Photos</a></li>
       </ul>
@@ -176,7 +202,7 @@
         </div>
       </dialog>
     </div>
-    </div>
+  </div>
 
   <div class="m-5 p-3 top-4">
     index

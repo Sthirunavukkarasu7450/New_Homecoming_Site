@@ -9,173 +9,199 @@
 </head>
 <body class="overflow-x-hidden">
     <div class="navbar bg-base-100 banner text-secondary border-b-4 border-secondary-content sticky z-50 top-0 left-0 w-full">
-    <div class="navbar-start banner lg:hidden">
-        <div class="dropdown">
-            <button tabindex="0" class="btn btn-ghost">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6">
-                <path stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-            </button>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 w-56 bg-base-100 rounded-box shadow z-50 text-lg">
-                <li><a href="./index.html">Home</a></li>
-                <li>
-                    <details>
-                    <summary class="flex justify-between items-center">
-                        <a href="./about.html" class="flex-1">About</a>
-                    </summary>
-                    <ul class="p-2">
-                        <li><a href="./sustainability.html">Sustainability</a></li>
-                        <li><a href="./directors.html">Directors</a></li>
-                    </ul>
-                    </details>
-                </li>
-                <li><a href="./events.html">Events</a></li>
-                <li><a href="./alumni.html">Alumni</a></li>
-                <li>
-                    <details>
-                    <summary class="flex justify-between items-center">
-                        <a href="./court.html" class="flex-1">Court</a>
-                    </summary>
-                    <ul class="p-2">
-                        <li><a href="./student_court.html">Student</a></li>
-                        <li><a href="./graduate_court.html">Graduate</a></li>
-                        <li><a href="./alumni_court.html">Alumni</a></li>
-                        <li><a href="./university_court.html">University</a></li>
-                    </ul>
-                    </details>
-                </li>
-                <li>
-                    <details>
-                    <summary class="flex justify-between items-center">
-                        <a href="./participate.html" class="flex-1">Participate</a>
-                    </summary>
-                    <ul class="p-2">
-                        <li><a href="./volunteers.html">Volunteers</a></li>
+        <div class="navbar-start banner lg:hidden">
+            <div class="dropdown">
+                <button tabindex="0" class="btn btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6">
+                    <path stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                </button>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 w-56 bg-base-100 rounded-box shadow z-50 text-lg">
+                    <li><a href="./index.html">Home</a></li>
+                    <li>
+                        <details>
+                        <summary class="flex justify-between items-center">
+                            <a href="./about.html" class="flex-1">About</a>
+                        </summary>
+                        <ul class="p-2">
+                            <li><a href="./sustainability.html">Sustainability</a></li>
+                            <li><a href="./directors.html">Directors</a></li>
+                        </ul>
+                        </details>
+                    </li>
+                    <li><a href="./events.html">Events</a></li>
+                    <li><a href="./alumni.html">Alumni</a></li>
+                    <li>
+                        <details>
+                        <summary class="flex justify-between items-center">
+                            <a href="./court.html" class="flex-1">Court</a>
+                        </summary>
+                        <ul class="p-2">
+                            <li><a href="./student_court.html">Student</a></li>
+                            <li><a href="./graduate_court.html">Graduate</a></li>
+                            <li><a href="./alumni_court.html">Alumni</a></li>
+                            <li><a href="./university_court.html">University</a></li>
+                        </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                        <summary class="flex justify-between items-center">
+                            <a href="./participate.html" class="flex-1">Participate</a>
+                        </summary>
+                        <ul class="p-2">
+                            <li>
+                                <details>
+                                    <summary class="flex justify-between items-center">
+                                    <a href="./volunteers.html" class="flex-1">
+                                        Volunteers
+                                    </a>
+                                    </summary>
+                                    <ul class="p-2">
+                                    <li><a href="./captains.html">Captains</a></li>
+                                    <li><a href="./committee_members.html">Committee Members</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li><a href="./organizations.html">Organizations</a></li>
+                            <li><a href="./forms.html">Forms & Applications</a></li>
+                            <li><a href="./resources.html">Resources</a></li>
+                        </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <a href="https://photos.homecoming.psu.edu">Photos</a>
+                    </li>
+                    <li class="mt-2">
+                        <button
+                        class="btn btn-secondary w-full text-base-100"
+                        onclick="subscribe_modal.showModal()">
+                        Subscribe
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hidden lg:flex navbar-start banner">
+            <a href="./index.html">
+            <img src="../files/img/banner-logo.png" alt="" class="w-24 image-full p-1 m-1 md:items-center">
+            </a>
+        </div>
+        <div class="navbar-center lg:hidden flex">
+        <a href="./index.html">
+            <img src="../files/img/banner-logo.png" alt="" class="w-24 image-full p-1 m-1 md:items-center">
+        </a>
+        </div>
+        <div class="navbar-center hidden lg:flex banner">
+        <ul class="menu menu-horizontal flex justify-center text-center items-center origin-center px-2 text-xl mx-3">
+            <li class="flex-none"><a tabindex="0" href="./index.html" class="text-secondary transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent">Home</a></li>
+            <li class="relative mega-trigger flex-none">
+            <a class="text-secondary bg-base-100 border-none shadow-none text-xl flex items-center gap-1 transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent" href="./about.html">About
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </a>
+            <div class="mega-menu bg-base-100 w-auto">
+                <ul class="menu text-lg">
+                <li><a href="./sustainability.html">Sustainability</a></li>
+                <li><a href="./directors.html">Directors</a></li>
+                </ul>
+            </div>
+            </li>
+            <li class="flex-none"><a tabindex="0" href="./events.html" class="transition hover:text-pink-950 ease-in-out duration-900 pr-2 mx-2 hover:bg-transparent">Events</a></li>
+            <li class="flex-none"><a tabindex="0" href="./alumni.html" class="transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent">Alumni</a></li>
+            <li class="relative mega-trigger flex-none">
+            <a class="text-secondary bg-base-100 border-none shadow-none text-xl flex items-center gap-1 transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent" href="./court.html">Court
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </a>
+            <div class="mega-menu bg-base-100 w-auto">
+                <ul class="menu text-lg">
+                <li><a href="./student_cout.html">Student</a></li>
+                <li><a href="./graduate_court.html">Graduate</a></li>
+                <li><a href="./alumni_court.html">Alumni</a></li>
+                <li><a href="./university_court.html">University</a></li>
+                </ul>
+            </div>
+            </li>
+            <li class="relative mega-trigger flex-none">
+            <a class="text-secondary bg-base-100 border-none shadow-none text-xl flex items-center gap-1 transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent" href="./participate.html">Participate
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </a>
+                <div class="mega-menu bg-base-100 w-auto">
+                    <ul class="menu text-lg">
+
+                        <!-- Volunteers hover menu -->
+                        <li class="relative group">
+                        <a href="./volunteers.html" class="flex items-center gap-2">
+                            Volunteers
+                            <svg class="size-4" viewBox="0 0 20 20" fill="currentColor">...</svg>
+                        </a>
+                        <ul class="menu absolute left-full top-0 bg-base-100 rounded-box shadow-lg
+                                    opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                                    transition-all duration-200 min-w-52 z-50">
+                            <li><a href="./captains.html">Captains</a></li>
+                            <li><a href="./committee_members.html">Committee Members</a></li>
+                        </ul>
+                        </li>
+
                         <li><a href="./organizations.html">Organizations</a></li>
                         <li><a href="./forms.html">Forms & Applications</a></li>
                         <li><a href="./resources.html">Resources</a></li>
                     </ul>
-                    </details>
-                </li>
-                <li>
-                    <a href="https://photos.homecoming.psu.edu">Photos</a>
-                </li>
-                <li class="mt-2">
-                    <button
-                    class="btn btn-secondary w-full text-base-100"
-                    onclick="subscribe_modal.showModal()">
-                    Subscribe
-                    </button>
-                </li>
-            </ul>
+                </div>
+            </li>
+            <li class="flex-none"><a href="https://photos.homecoming.psu.edu" class="transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 bg-transparent">Photos</a></li>
+        </ul>
         </div>
-    </div>
-    <div class="hidden lg:flex navbar-start banner">
-        <a href="./index.html">
-        <img src="../files/img/banner-logo.png" alt="" class="w-24 image-full p-1 m-1 md:items-center">
-        </a>
-    </div>
-    <div class="navbar-center lg:hidden flex">
-      <a href="./index.html">
-        <img src="../files/img/banner-logo.png" alt="" class="w-24 image-full p-1 m-1 md:items-center">
-      </a>
-    </div>
-    <div class="navbar-center hidden lg:flex banner">
-      <ul class="menu menu-horizontal flex justify-center text-center items-center origin-center px-2 text-xl mx-3">
-        <li class="flex-none"><a tabindex="0" href="./index.html" class="text-secondary transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent">Home</a></li>
-        <li class="relative mega-trigger flex-none">
-          <a class="text-secondary bg-base-100 border-none shadow-none text-xl flex items-center gap-1 transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent" href="./about.html">About
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-            </svg>
-          </a>
-          <div class="mega-menu bg-base-100 w-auto">
-            <ul class="menu text-lg">
-              <li><a href="./sustainability.html">Sustainability</a></li>
-              <li><a href="./directors.html">Directors</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="flex-none"><a tabindex="0" href="./events.html" class="transition hover:text-pink-950 ease-in-out duration-900 pr-2 mx-2 hover:bg-transparent">Events</a></li>
-        <li class="flex-none"><a tabindex="0" href="./alumni.html" class="transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent">Alumni</a></li>
-        <li class="relative mega-trigger flex-none">
-          <a class="text-secondary bg-base-100 border-none shadow-none text-xl flex items-center gap-1 transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent" href="./court.html">Court
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-            </svg>
-          </a>
-          <div class="mega-menu bg-base-100 w-auto">
-            <ul class="menu text-lg">
-              <li><a href="./student_cout.html">Student</a></li>
-              <li><a href="./graduate_court.html">Graduate</a></li>
-              <li><a href="./alumni_court.html">Alumni</a></li>
-              <li><a href="./university_court.html">University</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="relative mega-trigger flex-none">
-          <a class="text-secondary bg-base-100 border-none shadow-none text-xl flex items-center gap-1 transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent" href="./participate.html">Participate
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-            </svg>
-          </a>
-          <div class="mega-menu bg-base-100 w-auto">
-            <ul class="menu text-lg">
-              <li><a href="./volunteers.html">Volunteers</a></li>
-              <li><a href="./organizations.html">Organizations</a></li>
-              <li><a href="./forms.html">Forms & Applications</a></li>
-              <li><a href="./resources.html">Resources</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="flex-none"><a href="https://photos.homecoming.psu.edu" class="transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 bg-transparent">Photos</a></li>
-      </ul>
-    </div>
-    <div class="navbar-end p-3 text-xl">
-      <button class="btn text-xl p-6 bg-secondary text-base-100 transition hover:text-secondary hover:bg-primary duration-1200 ease-in-out hidden lg:flex" onclick="subscribe_modal.showModal()">Subscribe</button>
-      <dialog id="subscribe_modal" class="modal justify-center">
-        <div class="modal-box w-full min-w-5xl text-center p-6">
-          <form method="dialog">
-            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-xl p-8">✕</button>
-          </form>
-          <h3 class="text-6xl font-bold px-4 py-2">Subscribe to our Newsletter!</h3>
-          <form method="POST">
-            <div class="grid grid-cols-2 gap-4 px-4 py-1">
-              <div class="col-span-1">
-                <fieldset class="fieldset">
-                  <legend class="fieldset-legend text-left text-xl">First Name</legend>
-                  <input type="text" class="input input-primary w-full" id="Subscribe_First_Name" placeholder=""/>
-                </fieldset>
-              </div>
-              <div class="col-span-1">
-                <fieldset class="fieldset">
-                  <legend class="fieldset-legend text-left text-xl">Last Name</legend>
-                  <input type="text" class="input input-primary w-full" id="Subscribe_Last_Name" placeholder=""/>
-                </fieldset>
-              </div>
-              <div class="col-span-2">
-                <fieldset class="fieldset w-full">
-                  <legend class="fieldset-legend text-left text-xl">Email</legend>
-                  <input type="email" class="input input-primary w-full validator" id="Subscribe_Email" placeholder="email@domain.com"/>
-                  <div class="validator-hint">Enter valid email address</div>
-                </fieldset>
-              </div>
+        <div class="navbar-end p-3 text-xl">
+        <button class="btn text-xl p-6 bg-secondary text-base-100 transition hover:text-secondary hover:bg-primary duration-1200 ease-in-out hidden lg:flex" onclick="subscribe_modal.showModal()">Subscribe</button>
+        <dialog id="subscribe_modal" class="modal justify-center">
+            <div class="modal-box w-full min-w-5xl text-center p-6">
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-xl p-8">✕</button>
+            </form>
+            <h3 class="text-6xl font-bold px-4 py-2">Subscribe to our Newsletter!</h3>
+            <form method="POST">
+                <div class="grid grid-cols-2 gap-4 px-4 py-1">
+                <div class="col-span-1">
+                    <fieldset class="fieldset">
+                    <legend class="fieldset-legend text-left text-xl">First Name</legend>
+                    <input type="text" class="input input-primary w-full" id="Subscribe_First_Name" placeholder=""/>
+                    </fieldset>
+                </div>
+                <div class="col-span-1">
+                    <fieldset class="fieldset">
+                    <legend class="fieldset-legend text-left text-xl">Last Name</legend>
+                    <input type="text" class="input input-primary w-full" id="Subscribe_Last_Name" placeholder=""/>
+                    </fieldset>
+                </div>
+                <div class="col-span-2">
+                    <fieldset class="fieldset w-full">
+                    <legend class="fieldset-legend text-left text-xl">Email</legend>
+                    <input type="email" class="input input-primary w-full validator" id="Subscribe_Email" placeholder="email@domain.com"/>
+                    <div class="validator-hint">Enter valid email address</div>
+                    </fieldset>
+                </div>
+                </div>
+                <button type="submit" class="btn btn-primary w-full transition hover:btn-secondary duration-900 ease-in-out">Submit</button>
+            </form>
+            <form method="dialog" class="modal-backdrop px-4 py-1">
+                <button>close</button>
+            </form>
             </div>
-            <button type="submit" class="btn btn-primary w-full transition hover:btn-secondary duration-900 ease-in-out">Submit</button>
-          </form>
-          <form method="dialog" class="modal-backdrop px-4 py-1">
-            <button>close</button>
-          </form>
+        </dialog>
         </div>
-      </dialog>
-    </div>
     </div>
 
     <div class="hero w-screen overflow-x-hidden h-[45vh] bg-cover bg-center md:bg-fixed bg-no-repeat relative" style="background-image: url('../files/img/general_hero_img.jpg');">
