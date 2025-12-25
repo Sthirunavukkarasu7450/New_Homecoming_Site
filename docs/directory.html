@@ -8,33 +8,79 @@
   <link rel="shortcut icon" href="../files/img/banner-logo.png" type="image/x-icon">
 </head>
 <body class="overflow-x-hidden">
-  <div class="navbar bg-base-100 banner text-secondary border-b-4 border-secondary-content sticky z-50 top-0 left-0 w-full">
-    <div class="navbar-start banner">
-      <div class="dropdown">
-        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-        </div>
-        <ul
-          tabindex="-1"
-          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-          <li><a href="./index.html">Home</a></li>
-          <li>
-            <a>Parent</a>
-            <ul class="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
+    <div class="navbar bg-base-100 banner text-secondary border-b-4 border-secondary-content sticky z-50 top-0 left-0 w-full">
+    <div class="navbar-start banner lg:hidden">
+        <div class="dropdown">
+            <button tabindex="0" class="btn btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6">
+                <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            </button>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 w-56 bg-base-100 rounded-box shadow z-50 text-lg">
+                <li><a href="./index.html">Home</a></li>
+                <li>
+                    <details>
+                    <summary class="flex justify-between items-center">
+                        <a href="./about.html" class="flex-1">About</a>
+                    </summary>
+                    <ul class="p-2">
+                        <li><a href="./sustainability.html">Sustainability</a></li>
+                        <li><a href="./directors.html">Directors</a></li>
+                    </ul>
+                    </details>
+                </li>
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="./alumni.html">Alumni</a></li>
+                <li>
+                    <details>
+                    <summary class="flex justify-between items-center">
+                        <a href="./court.html" class="flex-1">Court</a>
+                    </summary>
+                    <ul class="p-2">
+                        <li><a href="./student_court.html">Student</a></li>
+                        <li><a href="./graduate_court.html">Graduate</a></li>
+                        <li><a href="./alumni_court.html">Alumni</a></li>
+                        <li><a href="./university_court.html">University</a></li>
+                    </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                    <summary class="flex justify-between items-center">
+                        <a href="./participate.html" class="flex-1">Participate</a>
+                    </summary>
+                    <ul class="p-2">
+                        <li><a href="./volunteers.html">Volunteers</a></li>
+                        <li><a href="./organizations.html">Organizations</a></li>
+                        <li><a href="./forms.html">Forms & Applications</a></li>
+                        <li><a href="./resources.html">Resources</a></li>
+                    </ul>
+                    </details>
+                </li>
+                <li>
+                    <a href="https://photos.homecoming.psu.edu">Photos</a>
+                </li>
+                <li class="mt-2">
+                    <button
+                    class="btn btn-secondary w-full text-base-100"
+                    onclick="subscribe_modal.showModal()">
+                    Subscribe
+                    </button>
+                </li>
             </ul>
-          </li>
-          <li><a>Item 3</a></li>
-        </ul>
-      </div>
-      <div class="hidden lg:flex">
+        </div>
+    </div>
+    <div class="hidden lg:flex navbar-start banner">
         <a href="./index.html">
-          <img src="../files/img/banner-logo.png" alt="" class="w-24 image-full p-1 m-1 md:items-center">
+        <img src="../files/img/banner-logo.png" alt="" class="w-24 image-full p-1 m-1 md:items-center">
         </a>
-      </div>
     </div>
     <div class="navbar-center lg:hidden flex">
       <a href="./index.html">
@@ -130,7 +176,7 @@
         </div>
       </dialog>
     </div>
-  </div>
+    </div>
 
     <div class="hero w-screen overflow-x-hidden h-[45vh] bg-cover bg-center md:bg-fixed bg-no-repeat relative" style="background-image: url('../files/img/general_hero_img.jpg');">
         <div class="hero-overlay absolute inset-0 bg-black opacity-40"></div>
