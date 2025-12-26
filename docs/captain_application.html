@@ -1,0 +1,606 @@
+<!doctype html>
+<html data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <title>Captain Application</title>
+  <link rel="shortcut icon" href="../files/img/banner-logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="navbar bg-base-100 banner text-secondary border-b-4 border-secondary-content sticky z-50 top-0 left-0 w-full">
+        <div class="navbar-start banner lg:hidden">
+            <div class="dropdown">
+                <button tabindex="0" class="btn btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6">
+                    <path stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                </button>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 w-56 bg-base-100 rounded-box shadow z-50 text-lg">
+                    <li><a href="./index.html">Home</a></li>
+                    <li>
+                        <details>
+                        <summary class="flex justify-between items-center">
+                            <a href="./about.html" class="flex-1">About</a>
+                        </summary>
+                        <ul class="p-2">
+                            <li><a href="./sustainability.html">Sustainability</a></li>
+                            <li><a href="./directors.html">Directors</a></li>
+                        </ul>
+                        </details>
+                    </li>
+                    <li><a href="./events.html">Events</a></li>
+                    <li><a href="./alumni.html">Alumni</a></li>
+                    <li>
+                        <details>
+                        <summary class="flex justify-between items-center">
+                            <a href="./court.html" class="flex-1">Court</a>
+                        </summary>
+                        <ul class="p-2">
+                            <li><a href="./student_court.html">Student</a></li>
+                            <li><a href="./graduate_court.html">Graduate</a></li>
+                            <li><a href="./alumni_court.html">Alumni</a></li>
+                            <li><a href="./university_court.html">University</a></li>
+                        </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                        <summary class="flex justify-between items-center">
+                            <a href="./participate.html" class="flex-1">Participate</a>
+                        </summary>
+                        <ul class="p-2">
+                            <li>
+                                <details>
+                                    <summary class="flex justify-between items-center">
+                                    <a href="./volunteers.html" class="flex-1">
+                                        Volunteers
+                                    </a>
+                                    </summary>
+                                    <ul class="p-2">
+                                    <li><a href="./captains.html">Captains</a></li>
+                                    <li><a href="./committee_members.html">Committee Members</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li><a href="./organizations.html">Organizations</a></li>
+                            <li><a href="./forms.html">Forms & Applications</a></li>
+                            <li><a href="./resources.html">Resources</a></li>
+                        </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <a href="https://photos.homecoming.psu.edu">Photos</a>
+                    </li>
+                    <li class="mt-2">
+                        <button
+                        class="btn btn-secondary w-full text-base-100"
+                        onclick="subscribe_modal.showModal()">
+                        Subscribe
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hidden lg:flex navbar-start banner">
+            <a href="./index.html">
+            <img src="../files/img/banner-logo.png" alt="" class="w-24 image-full p-1 m-1 md:items-center">
+            </a>
+        </div>
+        <div class="navbar-center lg:hidden flex">
+        <a href="./index.html">
+            <img src="../files/img/banner-logo.png" alt="" class="w-24 image-full p-1 m-1 md:items-center">
+        </a>
+        </div>
+        <div class="navbar-center hidden lg:flex banner">
+        <ul class="menu menu-horizontal flex justify-center text-center items-center origin-center px-2 text-xl mx-3">
+            <li class="flex-none"><a tabindex="0" href="./index.html" class="text-secondary transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent">Home</a></li>
+            <li class="relative mega-trigger flex-none">
+            <a class="text-secondary bg-base-100 border-none shadow-none text-xl flex items-center gap-1 transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent" href="./about.html">About
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </a>
+            <div class="mega-menu bg-base-100 w-auto">
+                <ul class="menu text-lg">
+                <li><a href="./sustainability.html">Sustainability</a></li>
+                <li><a href="./directors.html">Directors</a></li>
+                </ul>
+            </div>
+            </li>
+            <li class="flex-none"><a tabindex="0" href="./events.html" class="transition hover:text-pink-950 ease-in-out duration-900 pr-2 mx-2 hover:bg-transparent">Events</a></li>
+            <li class="flex-none"><a tabindex="0" href="./alumni.html" class="transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent">Alumni</a></li>
+            <li class="relative mega-trigger flex-none">
+            <a class="text-secondary bg-base-100 border-none shadow-none text-xl flex items-center gap-1 transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent" href="./court.html">Court
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </a>
+            <div class="mega-menu bg-base-100 w-auto">
+                <ul class="menu text-lg">
+                <li><a href="./student_cout.html">Student</a></li>
+                <li><a href="./graduate_court.html">Graduate</a></li>
+                <li><a href="./alumni_court.html">Alumni</a></li>
+                <li><a href="./university_court.html">University</a></li>
+                </ul>
+            </div>
+            </li>
+            <li class="relative mega-trigger flex-none">
+            <a class="text-secondary bg-base-100 border-none shadow-none text-xl flex items-center gap-1 transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 hover:bg-transparent" href="./participate.html">Participate
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </a>
+                <div class="mega-menu bg-base-100 w-auto">
+                    <ul class="menu text-lg">
+
+                        <!-- Volunteers hover menu -->
+                        <li class="relative group">
+                        <a href="./volunteers.html" class="flex items-center gap-2">
+                            Volunteers
+                            <svg class="size-4" viewBox="0 0 20 20" fill="currentColor">...</svg>
+                        </a>
+                        <ul class="menu absolute left-full top-0 bg-base-100 rounded-box shadow-lg
+                                    opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                                    transition-all duration-200 min-w-52 z-50">
+                            <li><a href="./captains.html">Captains</a></li>
+                            <li><a href="./committee_members.html">Committee Members</a></li>
+                        </ul>
+                        </li>
+
+                        <li><a href="./organizations.html">Organizations</a></li>
+                        <li><a href="./forms.html">Forms & Applications</a></li>
+                        <li><a href="./resources.html">Resources</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="flex-none"><a href="https://photos.homecoming.psu.edu" class="transition hover:text-pink-950 ease-in-out duration-900 px-2 mx-2 bg-transparent">Photos</a></li>
+        </ul>
+        </div>
+        <div class="navbar-end p-3 text-xl">
+        <button class="btn text-xl p-6 bg-secondary text-base-100 transition hover:text-secondary hover:bg-primary duration-1200 ease-in-out hidden lg:flex" onclick="subscribe_modal.showModal()">Subscribe</button>
+        <dialog id="subscribe_modal" class="modal justify-center">
+            <div class="modal-box w-full min-w-5xl text-center p-6">
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-xl p-8">✕</button>
+            </form>
+            <h3 class="text-6xl font-bold px-4 py-2">Subscribe to our Newsletter!</h3>
+            <form method="POST">
+                <div class="grid grid-cols-2 gap-4 px-4 py-1">
+                <div class="col-span-1">
+                    <fieldset class="fieldset">
+                    <legend class="fieldset-legend text-left text-xl">First Name</legend>
+                    <input type="text" class="input input-primary w-full" id="Subscribe_First_Name" placeholder=""/>
+                    </fieldset>
+                </div>
+                <div class="col-span-1">
+                    <fieldset class="fieldset">
+                    <legend class="fieldset-legend text-left text-xl">Last Name</legend>
+                    <input type="text" class="input input-primary w-full" id="Subscribe_Last_Name" placeholder=""/>
+                    </fieldset>
+                </div>
+                <div class="col-span-2">
+                    <fieldset class="fieldset w-full">
+                    <legend class="fieldset-legend text-left text-xl">Email</legend>
+                    <input type="email" class="input input-primary w-full validator" id="Subscribe_Email" placeholder="email@domain.com"/>
+                    <div class="validator-hint">Enter valid email address</div>
+                    </fieldset>
+                </div>
+                </div>
+                <button type="submit" class="btn btn-primary w-full transition hover:btn-secondary duration-900 ease-in-out">Submit</button>
+            </form>
+            <form method="dialog" class="modal-backdrop px-4 py-1">
+                <button>close</button>
+            </form>
+            </div>
+        </dialog>
+        </div>
+    </div>
+
+    <div class="hero w-screen overflow-x-hidden h-[45vh] bg-cover bg-center md:bg-fixed bg-no-repeat relative" style="background-image: url('../files/img/general_hero_img.jpg');">
+        <div class="hero-overlay absolute inset-0 bg-black opacity-40"></div>
+        <div class="absolute left-1/2 transform -translate-x-1/2 text-center text-white">
+            <h1 class="text-6xl md:text-9xl font-bold font-TASA drop-shadow-lg">Captain Application</h1>
+        </div>
+    </div>
+
+    <div class="lg:p-8 lg:m-5 p-2 m-1 text-lg text-TASA bg-base-100 border-b-2 border-b-secondary-content">
+        <span class="text-3xl font-bold">Captain Responsibilities Include:</span>
+        <ol>
+            <li>
+                Must be available during the fall semester (2026)
+            </li>
+            <li>
+                Weekly committee meetings and Director one-on-one meetings
+            </li>
+            <li>
+                Participate in multiple Homecoming fundraisers (i.e. Tailgate Ambassadors, BJC concession stands, Stadium Cleanup, etc.)
+            </li>
+            <li>
+                Maintain an active presence at ALL Homecoming Week events
+            </li>
+            <li>
+                Write weekly, mid-year, and final reports and participate in year-end wrap up meetings
+            </li>
+            <li>
+                Participate in collaborative groups and work closely with other Directors and Captains
+            </li>
+            <li>
+                Attend all Homecoming events (internal workshops, committee events, and Homecoming events)
+            </li>
+            <li>
+                Actively engage in recruitment of committee members
+            </li>
+            <li>
+                Assist other committees during Homecoming week (assist with security on parade day if you do not have any other assigned responsibilities)
+            </li>
+        </ol>
+        <span class="text-3xl font-bold">Committee's and Role Descriptions:</span>
+        <br>
+        Click <a href="./captains.html" class="link link-hover">here</a> for more information.
+        <br>
+        <span class="text-3xl font-bold">Contact:</span>
+        <br>
+        <a href="mailto:director@homecoming.psu.edu" class="link link-hover py-4">Zachary McGuire (2026 Executive Director)</a>
+    </div>
+
+    <form action="">
+        <div class="text-2xl font-bold lg:px-16 lg:py-3 lg:mx-auto lg:my-2 p-2 m-1">Personal Information</div>
+        <div class="grid lg:grid-cols-6 grid-cols-1 gap-4 lg:py-3 lg:px-24 lg:my-2 lg:mx-auto p-2 m-1 text-lg">
+            <div class="lg:col-span-3 col-span-1">
+                <fieldset class="fieldset w-full">
+                    <legend class="fieldset-legend text-left text-xl">First Name</legend>
+                    <input type="text" class="input input-primary w-full" id="First_Name" placeholder=""/>
+                </fieldset>
+            </div>
+            <div class="lg:col-span-3 col-span-1">
+                <fieldset class="fieldset w-full">
+                    <legend class="fieldset-legend text-left text-xl">Last Name</legend>
+                    <input type="text" class="input input-primary w-full" id="Last_Name" placeholder=""/>
+                </fieldset>
+            </div>
+            <div class="lg:col-span-2 col-span-1">
+                <fieldset class="fieldset w-full">
+                    <legend class="fieldset-legend text-left text-xl">PSU Email</legend>
+                    <input type="email" class="input input-primary w-full" id="Email" placeholder=""/>
+                </fieldset>
+            </div>
+            <div class="lg:col-span-2 col-span-1">
+                <fieldset class="fieldset w-full">
+                    <legend class="fieldset-legend text-left text-xl">Phone Number</legend>
+                    <input type="tel" class="input input-primary w-full" id="Phone_Number" placeholder=""/>
+                </fieldset>
+            </div>
+            <div class="lg:col-span-2 col-span-1">
+                <fieldset class="fieldset w-full">
+                    <legend class="fieldset-legend text-left text-xl">Pronouns</legend>
+                    <input type="text" class="input input-primary w-full" id="Pronouns" placeholder=""/>
+                </fieldset>
+            </div>
+        </div>
+        <fieldset class="fieldset w-full lg:px-16 lg:py-3 lg:mx-auto lg:my-2 p-2 m-1">
+            <legend class="fieldset-legend text-left text-xl font-bold">
+                Address (at Penn State)
+            </legend>
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 lg:py-3 lg:px-8">    
+                <div class="lg:col-span-2">
+                    <label class="label text-xl">Address Line 1</label>
+                    <input type="text" class="input input-primary w-full" id="Address_Line_1" />
+                </div>
+                <div class="lg:col-span-2">
+                    <label class="label text-xl">Address Line 2</label>
+                    <input type="text" class="input input-primary w-full" id="Address_Line_2" />
+                </div>
+                <div class="lg:col-span-2">
+                    <label class="label text-xl">City</label>
+                    <input type="text" class="input input-primary w-full" id="City" />
+                </div>
+
+                <div>
+                    <label class="label text-xl">State</label>
+                    <input type="text" class="input input-primary w-full" id="State" />
+                </div>
+                <div>
+                    <label class="label text-xl">Zip Code</label>
+                    <input type="text" class="input input-primary w-full" id="Zip_Code" />
+                </div>
+            </div>
+        </fieldset>
+        <div class="border-b-2 border-b-secondary-content mx-4"></div>
+        <div class="text-2xl font-bold lg:px-16 lg:py-3 lg:mx-auto lg:my-2 p-2 m-1">Education Information</div>
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 lg:py-3 lg:px-24 lg:my-2 lg:mx-auto p-2 m-1 text-lg">
+            <div class="col-span-1">
+                <fieldset class="fieldset w-full">
+                    <legend class="fieldset-legend text-left text-xl">Major</legend>
+                    <input type="text" class="input input-primary w-full" id="Major" placeholder=""/>
+                </fieldset>
+            </div>
+            <div class="col-span-1">
+                <fieldset class="fieldset w-full">
+                    <legend class="fieldset-legend text-left text-xl">Expected Graduation Date</legend>
+                    <input type="text" class="input input-primary w-full" id="Expected_Graduation_Date" placeholder=""/>
+                </fieldset>
+            </div>
+            <div class="col-span-1">
+                <fieldset class="fieldset w-full">
+                    <legend class="fieldset-legend text-left text-xl">Number of Credits (Spring/Fall 2026)</legend>
+                    <input type="email" class="input input-primary w-full" id="Num_of_Credits" placeholder=""/>
+                </fieldset>
+            </div>
+            <div class="col-span-1">
+                <fieldset class="fieldset w-full">
+                    <legend class="fieldset-legend text-left text-xl">GPA</legend>
+                    <input type="tel" class="input input-primary w-full" id="Phone_Number" placeholder=""/>
+                </fieldset>
+            </div>
+            <div class="lg:col-span-2 col-span-1">
+                <fieldset class="fieldset w-full">
+                    <legend class="fieldset-legend text-xl">
+                        Will you be a student at University Park during the Fall 2026 semester?
+                    </legend>
+                    <div class="flex flex-col gap-2 text-lg">
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="radio" name="on_campus" class="radio radio-primary" value="yes"/>
+                            <span>Yes</span>
+                        </label>
+
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="radio" name="on_campus" class="radio radio-primary" value="no"/>
+                            <span>No</span>
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="border-b-2 border-b-secondary-content mx-4"></div>
+        <div class="lg:px-16 lg:py-3 lg:mx-auto lg:my-2 p-2 m-1">
+            <fieldset class="fieldset w-full">
+                <legend class="fieldset-legend text-2xl font-bold">
+                    Committee Preferences
+                </legend>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="label text-lg" for="committee_choice_1">
+                            First Choice
+                        </label>
+                        <select id="committee_choice_1" name="committee_choice_1" class="select select-primary w-full"                        >
+                            <option disabled selected>Select a committee</option>
+                            <option value="alumni_relations">Alumni Relations</option>
+                            <option value="competition">Competition</option>
+                            <option value="court_relations">Court Relations</option>
+                            <option value="event_logistics">Event Logistics</option>
+                            <option value="financial_management">Financial Management</option>
+                            <option value="internal_development">Internal Development</option>
+                            <option value="merchandise">Merchandise</option>
+                            <option value="opperations">OPPerations</option>
+                            <option value="parade">Parade</option>
+                            <option value="public_relations">Public Relations</option>
+                            <option value="technology">Technology</option>
+                            <option value="university_relations">University Relations</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label text-lg" for="committee_choice_2">
+                            Second Choice
+                        </label>
+                        <select id="committee_choice_2" name="committee_choice_2" class="select select-primary w-full">
+                            <option disabled selected>Select a committee</option>
+                            <option value="alumni_relations">Alumni Relations</option>
+                            <option value="competition">Competition</option>
+                            <option value="court_relations">Court Relations</option>
+                            <option value="event_logistics">Event Logistics</option>
+                            <option value="financial_management">Financial Management</option>
+                            <option value="internal_development">Internal Development</option>
+                            <option value="merchandise">Merchandise</option>
+                            <option value="opperations">OPPerations</option>
+                            <option value="parade">Parade</option>
+                            <option value="public_relations">Public Relations</option>
+                            <option value="technology">Technology</option>
+                            <option value="university_relations">University Relations</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label text-lg" for="committee_choice_3">
+                            Third Choice
+                        </label>
+                        <select id="committee_choice_3" name="committee_choice_3" class="select select-primary w-full"                        >
+                            <option disabled selected>Select a committee</option>
+                            <option value="alumni_relations">Alumni Relations</option>
+                            <option value="competition">Competition</option>
+                            <option value="court_relations">Court Relations</option>
+                            <option value="event_logistics">Event Logistics</option>
+                            <option value="financial_management">Financial Management</option>
+                            <option value="internal_development">Internal Development</option>
+                            <option value="merchandise">Merchandise</option>
+                            <option value="opperations">OPPerations</option>
+                            <option value="parade">Parade</option>
+                            <option value="public_relations">Public Relations</option>
+                            <option value="technology">Technology</option>
+                            <option value="university_relations">University Relations</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label text-lg" for="committee_choice_4">
+                            Fourth Choice
+                        </label>
+                        <select id="committee_choice_4" name="committee_choice_4" class="select select-primary w-full">
+                            <option disabled selected>Select a committee</option>
+                            <option value="alumni_relations">Alumni Relations</option>
+                            <option value="competition">Competition</option>
+                            <option value="court_relations">Court Relations</option>
+                            <option value="event_logistics">Event Logistics</option>
+                            <option value="financial_management">Financial Management</option>
+                            <option value="internal_development">Internal Development</option>
+                            <option value="merchandise">Merchandise</option>
+                            <option value="opperations">OPPerations</option>
+                            <option value="parade">Parade</option>
+                            <option value="public_relations">Public Relations</option>
+                            <option value="technology">Technology</option>
+                            <option value="university_relations">University Relations</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div class="border-b-2 border-b-secondary-content mx-4"></div>
+        <div class="text-2xl font-bold lg:px-16 lg:py-3 lg:mx-auto lg:my-2 p-2 m-1">Open Ended Questions</div>
+        <fieldset class="fieldset w-full lg:px-16 lg:mx-auto lg:my-2 p-2 m-1">
+            <div>
+                <legend for="involvement" class="fieldset-legend text-xl">
+                    Why do you want to be involved in Homecoming 2026?
+                </legend>
+                <textarea id="involvement" name="involvement" class="textarea textarea-primary w-full" rows="4" placeholder=""></textarea>
+            </div>
+            <div>
+                <legend for="vision" class="fieldset-legend text-xl">
+                    What do you envision for Homecoming 2026, both in general and regarding your top Committee choice(s)??
+                </legend>
+                <textarea id="vision" name="vision" class="textarea textarea-primary w-full" rows="4" placeholder=""></textarea>
+            </div>
+            <div>
+                <legend for="skills" class="fieldset-legend text-xl">
+                    Regarding your top Committee choice(s), what skills and experiences will make you an asset to that/those Committee(s)?
+                </legend>
+                <textarea id="skills" name="skills" class="textarea textarea-primary w-full" rows="4" placeholder=""></textarea>
+            </div>
+            <div>
+                <legend for="values" class="fieldset-legend text-xl">
+                    Please select one of the six Penn State Values and explain both how it relates to Homecoming 2026 and how you embody this value.
+                </legend>
+                <textarea id="values" name="values" class="textarea textarea-primary w-full" rows="4" placeholder=""></textarea>
+            </div>
+            <div>
+                <legend for="committments" class="fieldset-legend text-xl">
+                    Please list any other major priorities/commitments you currently have for the Spring and Fall 2026 semesters (please include number of hours a week you dedicate to each of them). 
+                    How will you balance your role as a student, a member of a Homecoming Captain Committee, and your other commitments?
+                </legend>
+                <textarea id="commitments" name="commitments" class="textarea textarea-primary w-full" rows="4" placeholder=""></textarea>
+            </div>
+            <div>
+                <legend for="how_you_found_out" class="fieldset-legend text-xl">
+                    Please briefly tell us how you heard about Homecoming 2026? How did you find out about applications?
+                </legend>
+                <textarea id="how_you_found_out" name="how_you_found_out" class="textarea textarea-primary w-full" rows="4" placeholder=""></textarea>
+            </div>
+            <div>
+                <legend for="preference" class="fieldset-legend text-xl">
+                    If you have a specific Captain preference within a Committee, please list in the text box below. For example; University Relations (Involvement)
+                </legend>
+                <textarea id="preference" name="preference" class="textarea textarea-primary w-full" rows="4" placeholder=""></textarea>
+            </div>
+        </fieldset>
+        <div class="border-b-2 border-b-secondary-content mx-4"></div>
+        <div class="text-2xl font-bold lg:px-16 lg:pt-3 lg:pb-1 lg:mx-auto lg:my-1 p-2 m-1">Additional Information</div>
+        <fieldset class="fieldset w-full lg:px-16 lg:mx-auto p-2 m-1">
+            <div class="grid lg:grid-cols-2 grid-cols-1">
+                <div class="col-span-1 py-2">
+                    <legend class="fieldset-legend text-xl">Resume Upload</legend>
+                    <div class="px-4"><input type="file" class="file-input file-input-lg w-full"/></div>
+                </div>
+                <div class="col-span-1 py-2">
+                    <legend class="fieldset-legend text-xl">Current Class Schedule (Screenshot)</legend>
+                    <div class="px-4"><input type="file" class="file-input file-input-lg w-full"/></div>
+                </div>
+            </div>
+            <div>
+                <legend for="portfolio" class="fieldset-legend text-xl">
+                    Portfolio (Website, Shared Folder, etc.)
+                </legend>
+                <textarea id="portfolio" name="portfolio" class="textarea textarea-primary w-full" rows="4" placeholder=""></textarea>
+            </div>
+            <div>
+                <legend for="references" class="fieldset-legend text-xl">
+                    References (Please list at least two references)
+                </legend>
+                <textarea id="references" name="references" class="textarea textarea-primary w-full" rows="4" placeholder=""></textarea>
+            </div>
+        </fieldset>
+        <div class="lg:px-16 lg:py-8 lg:mx-auto lg:my-2 px-2 py-4 m-1">
+            <button type="submit" class="btn btn-primary w-full transition hover:btn-secondary duration-900 ease-in-out">Submit Application</button>
+        </div>
+    </form>
+
+    <footer class="footer sm:footer-horizontal bg-secondary-content text-base-content p-10 grid lg:grid-cols-12 grid-cols-1 gap-1">
+        <nav class="col-span-1 lg:col-span-6 px-4">
+        <div class="footer-title font-bold text-primary text-TASA text-2xl">Penn State Homecoming</div>
+        <div class="text-primary text-TASA text-lg">
+            Site designed and maintained by the Homecoming Technology Committee. For site related inquries, contact <a class="link underline" href="mailto:technology@homecoming.psu.edu">technology@homecoming.psu.edu</a>.
+        </div>
+        <div class="text-primary text-TASA text-lg">
+            © 2026 Penn State Homecoming is an affiliated student-run organization under the advisement of the office of Penn State Student Affairs Union and Student Activities.
+        </div>
+        <div class="text-primary text-TASA text-lg">
+            <a href="https://www.psu.edu/web-privacy-statement/" class="link underline">Privacy and Legal Statement</a>
+        </div>
+        </nav>
+        <nav class="col-span-3 px-4">
+        <div class="footer-title font-bold text-primary text-TASA text-2xl">Contact</div>
+        <div class="text-primary text-TASA text-lg">
+            227B HUB<br>
+            University Park, PA 16802
+        </div>
+        <div class="text-primary text-TASA text-lg">Email:
+            <a href="mailto:contact@homecoming.psu.edu" class="link underline">contact@homecoming.psu.edu</a>
+        </div>
+        </nav>
+        <nav class="col-span-2 px-4">
+        <div class="footer-title font-bold text-primary text-TASA text-2xl">
+            Navigation
+        </div>
+        <div class="text-primary text-TASA text-lg">
+            <a href="./directory.html" class="link link-hover">Directory</a><br>
+            <a href="./resources.html" class="link link-hover">Resources</a><br>
+            <a href="./plan_a_visit.html" class="link link-hover">Plan a Visit</a><br>
+            <a href="report_an_organization.html" class="link link-hover">Report an Organization</a>
+        </div>
+        </nav>
+        <nav class="col-span-1 px-4">
+        <div class="footer-title font-bold text-primary text-TASA text-2xl">Social</div>
+        <div class="grid grid-flow-col gap-4">
+            <a>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+            </svg>
+            </a>
+            <a>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+            </svg>
+            </a>
+            <a>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+            </svg>
+            </a>
+        </div>
+        </nav>
+    </footer>
+
+  <script src="../src/scripts.js"></script>
+</body>
+</html>
