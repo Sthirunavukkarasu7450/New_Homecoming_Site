@@ -251,37 +251,37 @@
         <a href="mailto:director@homecoming.psu.edu" class="link link-hover py-4">Zachary McGuire (2026 Executive Director)</a>
     </div>
 
-    <form action="">
+    <form action="/apply" method="post">
         <div class="text-2xl font-bold lg:px-16 lg:py-3 lg:mx-auto lg:my-2 p-2 m-1">Personal Information</div>
         <div class="grid lg:grid-cols-6 grid-cols-1 gap-4 lg:py-3 lg:px-24 lg:my-2 lg:mx-auto p-2 m-1 text-lg">
             <div class="lg:col-span-3 col-span-1">
                 <fieldset class="fieldset w-full">
                     <legend class="fieldset-legend text-left text-xl">First Name</legend>
-                    <input type="text" class="input input-primary w-full" id="First_Name" placeholder=""/>
+                    <input type="text" class="input input-primary w-full" id="First_Name" placeholder="" required/>
                 </fieldset>
             </div>
             <div class="lg:col-span-3 col-span-1">
                 <fieldset class="fieldset w-full">
                     <legend class="fieldset-legend text-left text-xl">Last Name</legend>
-                    <input type="text" class="input input-primary w-full" id="Last_Name" placeholder=""/>
+                    <input type="text" class="input input-primary w-full" id="Last_Name" placeholder="" required/>
                 </fieldset>
             </div>
             <div class="lg:col-span-2 col-span-1">
                 <fieldset class="fieldset w-full">
                     <legend class="fieldset-legend text-left text-xl">PSU Email</legend>
-                    <input type="email" class="input input-primary w-full" id="Email" placeholder=""/>
+                    <input type="email" class="input input-primary w-full" id="Email" placeholder="" required/>
                 </fieldset>
             </div>
             <div class="lg:col-span-2 col-span-1">
                 <fieldset class="fieldset w-full">
                     <legend class="fieldset-legend text-left text-xl">Phone Number</legend>
-                    <input type="tel" class="input input-primary w-full" id="Phone_Number" placeholder=""/>
+                    <input type="tel" class="input input-primary w-full" id="Phone_Number" placeholder="" required/>
                 </fieldset>
             </div>
             <div class="lg:col-span-2 col-span-1">
                 <fieldset class="fieldset w-full">
                     <legend class="fieldset-legend text-left text-xl">Pronouns</legend>
-                    <input type="text" class="input input-primary w-full" id="Pronouns" placeholder=""/>
+                    <input type="text" class="input input-primary w-full" id="Pronouns" placeholder="" required/>
                 </fieldset>
             </div>
         </div>
@@ -292,7 +292,7 @@
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 lg:py-3 lg:px-8">    
                 <div class="lg:col-span-2">
                     <label class="label text-xl">Address Line 1</label>
-                    <input type="text" class="input input-primary w-full" id="Address_Line_1" />
+                    <input type="text" class="input input-primary w-full" id="Address_Line_1" required/>
                 </div>
                 <div class="lg:col-span-2">
                     <label class="label text-xl">Address Line 2</label>
@@ -300,16 +300,16 @@
                 </div>
                 <div class="lg:col-span-2">
                     <label class="label text-xl">City</label>
-                    <input type="text" class="input input-primary w-full" id="City" />
+                    <input type="text" class="input input-primary w-full" id="City" required/>
                 </div>
 
                 <div>
                     <label class="label text-xl">State</label>
-                    <input type="text" class="input input-primary w-full" id="State" />
+                    <input type="text" class="input input-primary w-full" id="State" required/>
                 </div>
                 <div>
                     <label class="label text-xl">Zip Code</label>
-                    <input type="text" class="input input-primary w-full" id="Zip_Code" />
+                    <input type="text" class="input input-primary w-full" id="Zip_Code" required/>
                 </div>
             </div>
         </fieldset>
@@ -319,25 +319,25 @@
             <div class="col-span-1">
                 <fieldset class="fieldset w-full">
                     <legend class="fieldset-legend text-left text-xl">Major</legend>
-                    <input type="text" class="input input-primary w-full" id="Major" placeholder=""/>
+                    <input type="text" class="input input-primary w-full" id="Major" placeholder="" required/>
                 </fieldset>
             </div>
             <div class="col-span-1">
                 <fieldset class="fieldset w-full">
                     <legend class="fieldset-legend text-left text-xl">Expected Graduation Date</legend>
-                    <input type="text" class="input input-primary w-full" id="Expected_Graduation_Date" placeholder=""/>
+                    <input type="text" class="input input-primary w-full" id="Expected_Graduation_Date" placeholder="" required/>
                 </fieldset>
             </div>
             <div class="col-span-1">
                 <fieldset class="fieldset w-full">
                     <legend class="fieldset-legend text-left text-xl">Number of Credits (Spring/Fall 2026)</legend>
-                    <input type="email" class="input input-primary w-full" id="Num_of_Credits" placeholder=""/>
+                    <input type="email" class="input input-primary w-full" id="Num_of_Credits" placeholder="" required/>
                 </fieldset>
             </div>
             <div class="col-span-1">
                 <fieldset class="fieldset w-full">
                     <legend class="fieldset-legend text-left text-xl">GPA</legend>
-                    <input type="tel" class="input input-primary w-full" id="Phone_Number" placeholder=""/>
+                    <input type="tel" class="input input-primary w-full" id="Phone_Number" placeholder="" required/>
                 </fieldset>
             </div>
             <div class="lg:col-span-2 col-span-1">
@@ -347,12 +347,12 @@
                     </legend>
                     <div class="flex flex-col gap-2 text-lg">
                         <label class="flex items-center gap-2 cursor-pointer">
-                            <input type="radio" name="on_campus" class="radio radio-primary" value="yes"/>
+                            <input type="radio" name="on_campus" class="radio radio-primary" value="yes" required/>
                             <span>Yes</span>
                         </label>
 
                         <label class="flex items-center gap-2 cursor-pointer">
-                            <input type="radio" name="on_campus" class="radio radio-primary" value="no"/>
+                            <input type="radio" name="on_campus" class="radio radio-primary" value="no" required/>
                             <span>No</span>
                         </label>
                     </div>
@@ -370,7 +370,7 @@
                         <label class="label text-lg" for="committee_choice_1">
                             First Choice
                         </label>
-                        <select id="committee_choice_1" name="committee_choice_1" class="select select-primary w-full"                        >
+                        <select id="committee_choice_1" name="committee_choice_1" class="select select-primary w-full" required>
                             <option disabled selected>Select a committee</option>
                             <option value="alumni_relations">Alumni Relations</option>
                             <option value="competition">Competition</option>
@@ -390,7 +390,7 @@
                         <label class="label text-lg" for="committee_choice_2">
                             Second Choice
                         </label>
-                        <select id="committee_choice_2" name="committee_choice_2" class="select select-primary w-full">
+                        <select id="committee_choice_2" name="committee_choice_2" class="select select-primary w-full" required>
                             <option disabled selected>Select a committee</option>
                             <option value="alumni_relations">Alumni Relations</option>
                             <option value="competition">Competition</option>
@@ -410,7 +410,7 @@
                         <label class="label text-lg" for="committee_choice_3">
                             Third Choice
                         </label>
-                        <select id="committee_choice_3" name="committee_choice_3" class="select select-primary w-full"                        >
+                        <select id="committee_choice_3" name="committee_choice_3" class="select select-primary w-full" required>                    >
                             <option disabled selected>Select a committee</option>
                             <option value="alumni_relations">Alumni Relations</option>
                             <option value="competition">Competition</option>
@@ -430,7 +430,7 @@
                         <label class="label text-lg" for="committee_choice_4">
                             Fourth Choice
                         </label>
-                        <select id="committee_choice_4" name="committee_choice_4" class="select select-primary w-full">
+                        <select id="committee_choice_4" name="committee_choice_4" class="select select-primary w-full" required>
                             <option disabled selected>Select a committee</option>
                             <option value="alumni_relations">Alumni Relations</option>
                             <option value="competition">Competition</option>
@@ -456,44 +456,44 @@
                 <legend for="involvement" class="fieldset-legend text-xl">
                     Why do you want to be involved in Homecoming 2026?
                 </legend>
-                <textarea id="involvement" name="involvement" class="textarea textarea-primary w-full" rows="4" placeholder=""></textarea>
+                <textarea id="involvement" name="involvement" class="textarea textarea-primary w-full" rows="4" placeholder="" required></textarea>
             </div>
             <div>
                 <legend for="vision" class="fieldset-legend text-xl">
                     What do you envision for Homecoming 2026, both in general and regarding your top Committee choice(s)??
                 </legend>
-                <textarea id="vision" name="vision" class="textarea textarea-primary w-full" rows="4" placeholder=""></textarea>
+                <textarea id="vision" name="vision" class="textarea textarea-primary w-full" rows="4" placeholder="" required></textarea>
             </div>
             <div>
                 <legend for="skills" class="fieldset-legend text-xl">
                     Regarding your top Committee choice(s), what skills and experiences will make you an asset to that/those Committee(s)?
                 </legend>
-                <textarea id="skills" name="skills" class="textarea textarea-primary w-full" rows="4" placeholder=""></textarea>
+                <textarea id="skills" name="skills" class="textarea textarea-primary w-full" rows="4" placeholder="" required></textarea>
             </div>
             <div>
                 <legend for="values" class="fieldset-legend text-xl">
                     Please select one of the six Penn State Values and explain both how it relates to Homecoming 2026 and how you embody this value.
                 </legend>
-                <textarea id="values" name="values" class="textarea textarea-primary w-full" rows="4" placeholder=""></textarea>
+                <textarea id="values" name="values" class="textarea textarea-primary w-full" rows="4" placeholder="" required></textarea>
             </div>
             <div>
                 <legend for="committments" class="fieldset-legend text-xl">
                     Please list any other major priorities/commitments you currently have for the Spring and Fall 2026 semesters (please include number of hours a week you dedicate to each of them). 
                     How will you balance your role as a student, a member of a Homecoming Captain Committee, and your other commitments?
                 </legend>
-                <textarea id="commitments" name="commitments" class="textarea textarea-primary w-full" rows="4" placeholder=""></textarea>
+                <textarea id="commitments" name="commitments" class="textarea textarea-primary w-full" rows="4" placeholder="" required></textarea>
             </div>
             <div>
                 <legend for="how_you_found_out" class="fieldset-legend text-xl">
                     Please briefly tell us how you heard about Homecoming 2026? How did you find out about applications?
                 </legend>
-                <textarea id="how_you_found_out" name="how_you_found_out" class="textarea textarea-primary w-full" rows="4" placeholder=""></textarea>
+                <textarea id="how_you_found_out" name="how_you_found_out" class="textarea textarea-primary w-full" rows="4" placeholder="" required></textarea>
             </div>
             <div>
                 <legend for="preference" class="fieldset-legend text-xl">
                     If you have a specific Captain preference within a Committee, please list in the text box below. For example; University Relations (Involvement)
                 </legend>
-                <textarea id="preference" name="preference" class="textarea textarea-primary w-full" rows="4" placeholder=""></textarea>
+                <textarea id="preference" name="preference" class="textarea textarea-primary w-full" rows="4" placeholder="" required></textarea>
             </div>
         </fieldset>
         <div class="border-b-2 border-b-secondary-content mx-4"></div>
@@ -502,11 +502,11 @@
             <div class="grid lg:grid-cols-2 grid-cols-1">
                 <div class="col-span-1 py-2">
                     <legend class="fieldset-legend text-xl">Resume Upload</legend>
-                    <div class="px-4"><input type="file" class="file-input file-input-lg w-full"/></div>
+                    <div class="px-4"><input type="file" class="file-input file-input-lg w-full" required/></div>
                 </div>
                 <div class="col-span-1 py-2">
                     <legend class="fieldset-legend text-xl">Current Class Schedule (Screenshot)</legend>
-                    <div class="px-4"><input type="file" class="file-input file-input-lg w-full"/></div>
+                    <div class="px-4"><input type="file" class="file-input file-input-lg w-full" required/></div>
                 </div>
             </div>
             <div>
@@ -519,7 +519,7 @@
                 <legend for="references" class="fieldset-legend text-xl">
                     References (Please list at least two references)
                 </legend>
-                <textarea id="references" name="references" class="textarea textarea-primary w-full" rows="4" placeholder=""></textarea>
+                <textarea id="references" name="references" class="textarea textarea-primary w-full" rows="4" placeholder="" required></textarea>
             </div>
         </fieldset>
         <div class="lg:px-16 lg:py-8 lg:mx-auto lg:my-2 px-2 py-4 m-1">
